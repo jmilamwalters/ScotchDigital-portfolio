@@ -1,2 +1,2 @@
-# scotchIO-portfolio
+# ScotchDigital-portfolio
 Portfolio site re: Scotch.io call to Web Developers
