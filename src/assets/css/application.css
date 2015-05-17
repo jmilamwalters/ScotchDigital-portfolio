@@ -9,13 +9,20 @@ Application Styling
 .page-container {
   *zoom: 1;
   width: auto;
-  max-width: 500px, 0;
+  max-width: 960px, 2rem;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
 }
 .page-container:before,
 .page-container:after {
@@ -24,4 +31,15 @@ Application Styling
 }
 .page-container:after {
   clear: both;
+}
+.page-container:before,
+.page-container:after {
+  content: '';
+  display: table;
+}
+.page-container:after {
+  clear: both;
+}
+.page-container:last-child {
+  margin-right: 0%;
 }
