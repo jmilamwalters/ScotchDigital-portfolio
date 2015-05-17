@@ -1,0 +1,27 @@
+/* --------------------------------
+
+Application Styling
+
+-------------------------------- */
+* {
+  background: rgba(0,0,0,0.05);
+}
+.page-container {
+  *zoom: 1;
+  width: auto;
+  max-width: 500px, 0;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.page-container:before,
+.page-container:after {
+  content: '';
+  display: table;
+}
+.page-container:after {
+  clear: both;
+}
