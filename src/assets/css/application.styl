@@ -6,10 +6,61 @@ Application Styling
 
 @import 'jeet'
 
-edit()
+/* ==========================================================================
+   3. Utilities - These things get used a lot
+   ========================================================================== */
+/* Creates a responsive wrapper that makes our content scale nicely */
+.inner
+  position relative
+  width 80%
+  max-width 710px
+  margin 0 auto
+/* Centres vertically yo. (IE8+) */
+.vertical
+  display table-cell
+  vertical-align middle
+
+/*******************************
+            Globals
+*******************************/
 
 .page-container
-  center(max_width = 960px, pad = 2rem)
-  column()
+  center(max-width: 1170px, pad: 3rem)
+.row
+  margin 2rem 0rem
+h1
+  line-height 0.9
+  font-family 'Lato', sans-serif
+  font-size 1.8rem
+  font-weight bold
+  text-transform uppercase !important
 
+/*******************************
+            Sections
+*******************************/
 
+/*--------------
+    Masthead
+---------------*/
+.headstone
+  center()
+.epigraph-verso
+  col(8/16, offset: 1/16)
+.epigraph-recto
+  col(5/16)
+
+/* Big cover image on the home page */
+
+.main-header
+  position relative
+  display table
+  width 100%
+  height 100vh
+  margin-bottom 5rem
+  text-align center
+  /*  background #222 no-repeat center center*/
+  /*  background-size cover*/
+  overflow hidden
+
+.main-header.inner
+  width 80%

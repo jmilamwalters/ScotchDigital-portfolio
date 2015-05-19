@@ -3,43 +3,130 @@
 Application Styling
 
 -------------------------------- */
-* {
-  background: rgba(0,0,0,0.05);
+/* ==========================================================================
+   3. Utilities - These things get used a lot
+   ========================================================================== */
+/* Creates a responsive wrapper that makes our content scale nicely */
+.inner {
+  position: relative;
+  width: 80%;
+  max-width: 710px;
+  margin: 0 auto;
 }
+/* Centres vertically yo. (IE8+) */
+.vertical {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*******************************
+            Globals
+*******************************/
 .page-container {
   *zoom: 1;
   width: auto;
-  max-width: 960px, 2rem;
+  max-width: 1170px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.page-container:before,
+.page-container:after {
+  content: '';
+  display: table;
+}
+.page-container:after {
+  clear: both;
+}
+.row {
+  margin: 2rem 0rem;
+}
+/*******************************
+            Sections
+*******************************/
+/*--------------
+    Masthead
+---------------*/
+.headstone {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+}
+.headstone:before,
+.headstone:after {
+  content: '';
+  display: table;
+}
+.headstone:after {
+  clear: both;
+}
+.epigraph-verso {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 100%;
+  width: 48.5%;
+  margin-left: 6.4375%;
+  margin-right: 3%;
+}
+.epigraph-verso:before,
+.epigraph-verso:after {
+  content: '';
+  display: table;
+}
+.epigraph-verso:after {
+  clear: both;
+}
+.epigraph-verso:last-child {
+  margin-right: 0%;
+}
+.epigraph-recto {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 29.1875%;
   margin-left: 0%;
   margin-right: 3%;
 }
-.page-container:before,
-.page-container:after {
+.epigraph-recto:before,
+.epigraph-recto:after {
   content: '';
   display: table;
 }
-.page-container:after {
+.epigraph-recto:after {
   clear: both;
 }
-.page-container:before,
-.page-container:after {
-  content: '';
-  display: table;
-}
-.page-container:after {
-  clear: both;
-}
-.page-container:last-child {
+.epigraph-recto:last-child {
   margin-right: 0%;
+}
+/* Big cover image on the home page */
+.main-header {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 5rem;
+  text-align: center;
+  background: #222 no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+h1 {
+  line-height: 0.9;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase !important;
+}
+.main-header .inner {
+  width: 80%;
 }

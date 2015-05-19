@@ -1,0 +1,162 @@
+@import 'jeet'
+
+/* --------------------------------
+
+Application Styling
+
+-------------------------------- */
+
+/* =================================================
+   1. Utilities - These things get used a lot
+   ================================================= */
+
+/* Variables : Colors
+================================================== */
+psycho-black        = rgba(51, 47, 62, 1)
+psycho-grey         = rgba(230, 230, 230, 1)
+psycho-grey-light   = rgba(217, 217, 217, 1)
+psycho-pink         = rgba(249, 0, 79, 1)
+psycho-teal         = rgba(128, 200, 181, 1)
+psycho-yellow       = rgba(255, 238, 0, 1)
+
+/* Variables : Typography
+================================================== */
+psycho-display  = "Montserrat", sans-serif
+psycho-sans     = "Lato", sans-serif
+psycho-serif    = "Merriweather", serif
+
+/* Creates a responsive wrapper that makes our content scale nicely */
+.inner
+  position relative
+  width 80%
+  max-width 710px
+  margin 0 auto
+
+/* Centers vertically (IE8+) */
+.vertical
+  display table-cell
+  vertical-align middle
+
+/*******************************
+            Globals
+*******************************/
+
+h1
+  line-height 0.9
+  font-family psycho-display
+  font-size 1.8rem
+  font-weight 700
+  text-transform uppercase !important
+
+main
+  background psycho-grey-light
+
+main.main-homepage
+  padding 250px 0 0
+
+main h1,
+main h2,
+main p,
+p
+  color psycho-black
+  max-width 100%
+
+main p,
+p
+  font-family psycho-sans
+  font-weight 400
+  text-align left
+
+.content-container
+  center(max-width: 960px, pad: 2rem)
+
+.page-container
+  padding-top 5rem
+  padding-right 0
+  padding-bottom 5rem
+  padding-left 0
+
+.row
+  center(max-width: 1170px, pad: 3rem)
+
+.section-title
+  font-family psycho-display
+  font-size 3.6rem
+  font-weight 700
+  text-transform uppercase !important
+
+.alt
+  background psycho-grey
+
+/*******************************
+            Sections
+*******************************/
+
+/*--------------
+    Masthead
+---------------*/
+.masthead
+ background white
+
+.headstone
+  center()
+
+.epigraph-verso
+  col(8/16, offset: 1/16)
+  padding-top 4rem
+
+.epigraph-recto
+  col(5/16)
+
+#epigraph-name
+  color psycho-black
+  margin-bottom 0.2rem
+
+#epigraph-title
+  color psycho-pink
+
+/*--------------
+    Portfolio
+---------------*/
+.portfolio
+  background psycho-grey
+
+.portfolio-item
+  col(1/3, cycle: 3)
+
+/*--------------
+    Experience
+---------------*/
+
+/*--------------
+    Education
+---------------*/
+.education
+  background psycho-teal
+
+.education h2,
+.education p
+  color white
+
+/*--------------
+    Footer
+---------------*/
+.psycho-footer
+  background psycho-pink
+
+.psycho-footer h2,
+.psycho-footer p
+  color white
+
+/*******************************
+            Mobile
+*******************************/
+@media screen and (max-width: 800px)
+  .epigraph-verso,
+  .epigraph-recto,
+  #epigraph-name,
+  #epigraph-title
+    col(1/1, cycle: 1)
+  #profile-photo
+    center()
+    max-width 80%

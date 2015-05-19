@@ -1,0 +1,302 @@
+/* --------------------------------
+
+Application Styling
+
+-------------------------------- */
+/* =================================================
+   1. Utilities - These things get used a lot
+   ================================================= */
+/* Variables : Colors
+================================================== */
+/* Variables : Typography
+================================================== */
+/* Creates a responsive wrapper that makes our content scale nicely */
+.inner {
+  position: relative;
+  width: 80%;
+  max-width: 710px;
+  margin: 0 auto;
+}
+/* Centers vertically (IE8+) */
+.vertical {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*******************************
+            Globals
+*******************************/
+h1 {
+  line-height: 0.9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase !important;
+}
+main {
+  background: #d9d9d9;
+}
+main.main-homepage {
+  padding: 250px 0 0;
+}
+main h1,
+main h2,
+main p,
+p {
+  color: #332f3e;
+  max-width: 100%;
+}
+main p,
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+.content-container {
+  *zoom: 1;
+  width: auto;
+  max-width: 960px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.content-container:before,
+.content-container:after {
+  content: '';
+  display: table;
+}
+.content-container:after {
+  clear: both;
+}
+.page-container {
+  padding-top: 5rem;
+  padding-right: 0;
+  padding-bottom: 5rem;
+  padding-left: 0;
+}
+.row {
+  *zoom: 1;
+  width: auto;
+  max-width: 1170px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.row:before,
+.row:after {
+  content: '';
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase !important;
+}
+.alt {
+  background: #e6e6e6;
+}
+/*******************************
+            Sections
+*******************************/
+/*--------------
+    Masthead
+---------------*/
+.masthead {
+  background: #fff;
+}
+.headstone {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.headstone:before,
+.headstone:after {
+  content: '';
+  display: table;
+}
+.headstone:after {
+  clear: both;
+}
+.epigraph-verso {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 6.4375%;
+  margin-right: 3%;
+  padding-top: 4rem;
+}
+.epigraph-verso:before,
+.epigraph-verso:after {
+  content: '';
+  display: table;
+}
+.epigraph-verso:after {
+  clear: both;
+}
+.epigraph-verso:last-child {
+  margin-right: 0%;
+}
+.epigraph-recto {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 29.1875%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.epigraph-recto:before,
+.epigraph-recto:after {
+  content: '';
+  display: table;
+}
+.epigraph-recto:after {
+  clear: both;
+}
+.epigraph-recto:last-child {
+  margin-right: 0%;
+}
+#epigraph-name {
+  color: #332f3e;
+  margin-bottom: 0.2rem;
+}
+#epigraph-title {
+  color: #f9004f;
+}
+/*--------------
+    Portfolio
+---------------*/
+.portfolio {
+  background: #e6e6e6;
+}
+.portfolio-item {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.portfolio-item:before,
+.portfolio-item:after {
+  content: '';
+  display: table;
+}
+.portfolio-item:after {
+  clear: both;
+}
+.portfolio-item:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+.portfolio-item:nth-child(3n+1) {
+  clear: both;
+}
+/*--------------
+    Experience
+---------------*/
+/*--------------
+    Education
+---------------*/
+.education {
+  background: #80c8b5;
+}
+.education h2,
+.education p {
+  color: #fff;
+}
+/*--------------
+    Footer
+---------------*/
+.psycho-footer {
+  background: #f9004f;
+}
+.psycho-footer h2,
+.psycho-footer p {
+  color: #fff;
+}
+/*******************************
+            Mobile
+*******************************/
+@media screen and (max-width: 800px) {
+  .epigraph-verso,
+  .epigraph-recto,
+  #epigraph-name,
+  #epigraph-title {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  .epigraph-verso:before,
+  .epigraph-recto:before,
+  #epigraph-name:before,
+  #epigraph-title:before,
+  .epigraph-verso:after,
+  .epigraph-recto:after,
+  #epigraph-name:after,
+  #epigraph-title:after {
+    content: '';
+    display: table;
+  }
+  .epigraph-verso:after,
+  .epigraph-recto:after,
+  #epigraph-name:after,
+  #epigraph-title:after {
+    clear: both;
+  }
+  .epigraph-verso:nth-child(1n),
+  .epigraph-recto:nth-child(1n),
+  #epigraph-name:nth-child(1n),
+  #epigraph-title:nth-child(1n) {
+    margin-right: 0%;
+    float: right;
+  }
+  .epigraph-verso:nth-child(1n+1),
+  .epigraph-recto:nth-child(1n+1),
+  #epigraph-name:nth-child(1n+1),
+  #epigraph-title:nth-child(1n+1) {
+    clear: both;
+  }
+  #profile-photo {
+    *zoom: 1;
+    width: auto;
+    max-width: 1440px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 80%;
+  }
+  #profile-photo:before,
+  #profile-photo:after {
+    content: '';
+    display: table;
+  }
+  #profile-photo:after {
+    clear: both;
+  }
+}
