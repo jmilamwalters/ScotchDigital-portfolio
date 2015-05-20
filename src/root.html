@@ -16,7 +16,8 @@
     <link type="text/css" href="./assets/css/custom.css" rel="stylesheet">
 
     <!-- Le Fonts + Icons -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:300,700,700italic,300italic|Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:300,700,700italic,300italic" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Le Modernizr -->
     <script src="./assets/js/modernizr.js"></script>
@@ -69,14 +70,15 @@
           <!-- Portfolio Content -->
           <div class="row">
 
-            <!-- Portfolio Item: New Orleans Glassworks & Printmaking Studio -->
+            <!-- Portfolio Item -->
+            <!-- New Orleans Glassworks & Printmaking Studio -->
             <div class="ui special cards">
               <div class="teal card portfolio-item">
                 <div class="dimmable image">
                   <div class="ui dimmer">
                     <div class="content">
                       <div class="center">
-                        <div class="ui massive red button">Project Details</div>
+                        <div class="ui massive red glassworks-button button">Project Details</div>
                       </div>
                     </div>
                   </div>
@@ -180,15 +182,22 @@
         </div>
       </section>
 
-      <!-- Proficiencies -->
+      <!-- Education -->
       <section class="education" id="education">
         <div class="page-container">
           <div class="row">
             <h2 class="section-title">Education</h2>
             <div class="ui divider"></div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic repellendus, earum perferendis provident magni praesentium culpa saepe possimus officia ullam assumenda dolore aliquid quisquam architecto odio rem! Doloremque, voluptatem.
-            </p>
+            <h6 class="education-heading psychoblack">
+              Bachelor of Arts, English &amp; Philosophy
+            </h6>
+            <h6 class="education-heading psychopink">
+              The College of William &amp; Mary
+            </h6>
+            <h6 class="education-body psychoblack">
+              Williamsburg, VA 2008<br />
+              3.5 GPA
+            </h6>
           </div>
         </div>
       </section>
@@ -205,6 +214,34 @@
           </div>
         </div>
       </section>
+
+      <!-- MODALS -->
+      <div class="ui basic modal">
+        <i class="close icon"></i>
+        <div class="header">
+          New Orleans Glassworks &amp; Printmaking Studio
+        </div>
+        <div class="content">
+          <div class="image">
+            <i class="archive icon"></i>
+          </div>
+          <div class="description">
+            <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="two fluid ui inverted buttons">
+            <div class="ui red basic inverted button">
+              <i class="remove icon"></i>
+              No
+            </div>
+            <div class="ui green basic inverted button">
+              <i class="checkmark icon"></i>
+              Yes
+            </div>
+          </div>
+        </div>
+      </div>
 
     </main>
 
@@ -255,6 +292,11 @@
 <script src="./assets/js/libs/jquery.slabtext.js"></script>
 
 <!-- Le Plugins -->
+<script>
+$('.ui.basic.modal')
+  .modal('attach events', '.glassworks-button.button', 'show')
+;
+</script>
 <script>
   $('.special.cards .image').dimmer({
     on: 'hover'

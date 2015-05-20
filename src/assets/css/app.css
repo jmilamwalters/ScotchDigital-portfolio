@@ -32,6 +32,26 @@ h1 {
   font-weight: 700;
   text-transform: uppercase !important;
 }
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 4.2rem;
+}
+.section-title {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase !important;
+  font-weight: 300;
+}
+h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.6rem;
+}
+.education-heading {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.education-body {
+  font-weight: 300;
+}
 main {
   background: #d9d9d9;
 }
@@ -95,14 +115,14 @@ p {
 .row:after {
   clear: both;
 }
-.section-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.6rem;
-  font-weight: 700;
-  text-transform: uppercase !important;
-}
 .alt {
   background: #e6e6e6;
+}
+.psychoblack {
+  color: #332f3e;
+}
+.psychopink {
+  color: #f9004f;
 }
 /*******************************
             Sections
