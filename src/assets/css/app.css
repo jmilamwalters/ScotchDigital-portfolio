@@ -36,7 +36,7 @@ h2 {
   font-family: "Lato", sans-serif;
   font-size: 4.2rem;
 }
-.section-title {
+h2.section-title {
   font-family: "Lato", sans-serif;
   text-transform: uppercase !important;
   font-weight: 300;
@@ -53,7 +53,7 @@ h6 {
   font-weight: 300;
 }
 main {
-  background: #d9d9d9;
+  background: #80c8b5;
 }
 main.main-homepage {
   padding: 250px 0 0;
@@ -106,6 +106,8 @@ p {
   margin-left: auto;
   padding-left: 3rem;
   padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .row:before,
 .row:after {
@@ -123,6 +125,12 @@ p {
 }
 .psychopink {
   color: #f9004f;
+}
+/*******************************
+          Semantic UI
+*******************************/
+.image {
+  width: 100%;
 }
 /*******************************
             Sections
@@ -203,45 +211,131 @@ p {
 /*--------------
     Portfolio
 ---------------*/
+.ui.cards > .card > .content {
+  background: #fff;
+}
 .portfolio {
   background: #e6e6e6;
 }
-.portfolio-item {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 31.33333333333333%;
-  margin-left: 0%;
-  margin-right: 3%;
+.ui.cards > .card {
+  width: 45%;
+  margin: 3rem 2.5%;
 }
-.portfolio-item:before,
-.portfolio-item:after {
-  content: '';
-  display: table;
+@media screen and (max-width: 1170px) {
+  .ui.cards > .card {
+    margin: 2.1rem 2%;
+  }
 }
-.portfolio-item:after {
-  clear: both;
-}
-.portfolio-item:nth-child(3n) {
-  margin-right: 0%;
-  float: right;
-}
-.portfolio-item:nth-child(3n+1) {
-  clear: both;
+@media screen and (max-width: 769px) {
+  .ui.cards > .card {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    *zoom: 1;
+    width: auto;
+    max-width: 1440px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ui.cards > .card:first-child {
+    margin-left: auto;
+  }
+  .ui.cards > .card:last-child {
+    margin-right: auto;
+  }
+  .ui.cards > .card:before,
+  .ui.cards > .card:after {
+    content: '';
+    display: table;
+  }
+  .ui.cards > .card:after {
+    clear: both;
+  }
 }
 /*--------------
     Experience
 ---------------*/
+.experience {
+  background: #fff;
+}
+.experience .row {
+  margin-bottom: 3.6rem;
+}
+.experience-meta {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 39.91666666666667%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.experience-meta:before,
+.experience-meta:after {
+  content: '';
+  display: table;
+}
+.experience-meta:after {
+  clear: both;
+}
+.experience-meta:last-child {
+  margin-right: 0%;
+}
+.experience-tasks {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 57.083333333333336%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.experience-tasks:before,
+.experience-tasks:after {
+  content: '';
+  display: table;
+}
+.experience-tasks:after {
+  clear: both;
+}
+.experience-tasks:last-child {
+  margin-right: 0%;
+}
+@media screen and (max-width: 900px) {
+  .experience-meta,
+  .experience-tasks {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .experience-meta:first-child,
+  .experience-tasks:first-child {
+    margin-left: auto;
+  }
+  .experience-meta:last-child,
+  .experience-tasks:last-child {
+    margin-right: auto;
+  }
+}
 /*--------------
     Education
 ---------------*/
 .education {
-  background: #80c8b5;
+  background: #fff;
 }
 .education h2,
 .education p {
-  color: #fff;
+  color: #332f3e;
 }
 /*--------------
     Footer
@@ -252,6 +346,38 @@ p {
 .psycho-footer h2,
 .psycho-footer p {
   color: #fff;
+}
+/*--------------
+    Modal
+---------------*/
+/*
+.modal .image > img
+  center(max-width: 1170px)
+*/
+.thestack {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 2rem;
+}
+.thestack:before,
+.thestack:after {
+  content: '';
+  display: table;
+}
+.thestack:after {
+  clear: both;
+}
+.stack-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
 }
 /*******************************
             Mobile
@@ -320,3 +446,10 @@ p {
     clear: both;
   }
 }
+/*******************************
+            Desktop
+*******************************/
+/*
+@media screen and (min-width: 1920px)
+  .ui.modal
+*/

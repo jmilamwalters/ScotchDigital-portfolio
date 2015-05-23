@@ -25338,8 +25338,8 @@ select.ui.dropdown {
 
 @media only screen and (min-width: 1920px) {
   .ui.modal {
-    width: 56%;
-    margin: 0em 0em 0em -28%;
+    width: 74%;
+    margin: 0em 0em 0em -37%;
   }
 }
 
@@ -25560,8 +25560,8 @@ select.ui.dropdown {
 
 @media only screen and (min-width: 1920px) {
   .ui.small.modal {
-    width: 33.6%;
-    margin: 0em 0em 0em -16.8%;
+    width: 44.4%;
+    margin: 0em 0em 0em -22.2%;
   }
 }
 
@@ -25601,8 +25601,8 @@ select.ui.dropdown {
 
 @media only screen and (min-width: 1920px) {
   .ui.large.modal {
-    width: 67.2%;
-    margin: 0em 0em 0em -33.6%;
+    width: 88.8%;
+    margin: 0em 0em 0em -44.4%;
   }
 }
 

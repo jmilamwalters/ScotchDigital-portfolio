@@ -1,3 +1,10 @@
 /*******************************
          Site Overrides
 *******************************/
+
+/* Responsive Widths */
+@mobileWidth: 95%;
+@tabletWidth: 88%;
+@computerWidth: 74%;
+@largeMonitorWidth: @computerWidth;       /* 56% */
+@widescreenMonitorWidth: 56%;             /* 42% */
