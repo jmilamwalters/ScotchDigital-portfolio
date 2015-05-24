@@ -3,6 +3,13 @@
 Custom Styling
 
 -------------------------------- */
+/* =================================================
+   1. Utilities - These things get used a lot
+   ================================================= */
+/* Variables : Colors
+================================================== */
+/* Variables : Typography
+================================================== */
 /*******************************
         Semantic UI
 *******************************/
@@ -18,6 +25,46 @@ Custom Styling
   font-variant: normal;
   text-decoration: inherit;
   text-transform: none;
+}
+/* --------------------------------
+
+FlowType CSS
+
+-------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+}
+h2 {
+  font-size: 4.2rem;
+}
+h2.section-title {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase !important;
+  font-weight: 300;
+}
+h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.6rem;
+}
+h6.title {
+  color: #f9004f !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 3.6rem;
+  text-transform: uppercase !important;
+}
+h6.education-heading,
+.education-heading {
+  font-weight: 900;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+h6.education-body,
+.education-body {
+  font-weight: 300;
+  font-size: 3.6rem;
 }
 /* --------------------------------
 
