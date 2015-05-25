@@ -172,7 +172,7 @@ ol.ui.list ol,
 }
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #00b2f3;
+  color: #80c8b5;
 }
 
 /* Linked Item Icons */
@@ -187,7 +187,7 @@ ol.ui.list ol,
   color: rgba(0, 0, 0, 0.8) !important;
 }
 .ui.list .item a:hover {
-  color: #00b2f3 !important;
+  color: #80c8b5 !important;
 }
 
 /* Header */
@@ -352,7 +352,7 @@ ol.ui.list ol,
 }
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
-  color: #00b2f3;
+  color: #80c8b5;
 }
 
 /* Linking Content */
@@ -361,7 +361,7 @@ ol.ui.list ol,
   color: #ffffff !important;
 }
 .ui.inverted.list .item a:hover {
-  color: #00b2f3 !important;
+  color: #80c8b5 !important;
 }
 
 /*-------------------
@@ -834,15 +834,15 @@ ol.ui.horizontal.list li:before,
 }
 .ui.mini.horizontal.list .list > .item,
 .ui.mini.horizontal.list > .item {
-  font-size: 0.71428571rem;
+  font-size: 0.7142rem;
 }
 .ui.tiny.horizontal.list .list > .item,
 .ui.tiny.horizontal.list > .item {
-  font-size: 0.85714286rem;
+  font-size: 0.8571rem;
 }
 .ui.small.horizontal.list .list > .item,
 .ui.small.horizontal.list > .item {
-  font-size: 0.92857143rem;
+  font-size: 0.9285rem;
 }
 .ui.horizontal.list .list > .item,
 .ui.horizontal.list > .item {
@@ -850,19 +850,19 @@ ol.ui.horizontal.list li:before,
 }
 .ui.large.horizontal.list .list > .item,
 .ui.large.horizontal.list > .item {
-  font-size: 1.14285714rem;
+  font-size: 1.1428rem;
 }
 .ui.big.horizontal.list .list > .item,
 .ui.big.horizontal.list > .item {
-  font-size: 1.28571429rem;
+  font-size: 1.2857rem;
 }
 .ui.huge.horizontal.list .list > .item,
 .ui.huge.horizontal.list > .item {
-  font-size: 1.42857143rem;
+  font-size: 1.4285rem;
 }
 .ui.massive.horizontal.list .list > .item,
 .ui.massive.horizontal.list > .item {
-  font-size: 1.71428571rem;
+  font-size: 1.7142rem;
 }
 
 

@@ -33,7 +33,7 @@
 .ui.rating .icon {
   cursor: pointer;
   margin: 0em;
-  width: 1.1em;
+  width: 1.18em;
   height: auto;
   text-align: center;
   padding: 0em;
@@ -54,7 +54,7 @@
 
 /* Inactive */
 .ui.star.rating .icon {
-  width: 1.1em;
+  width: 1.18em;
   color: rgba(0, 0, 0, 0.15);
 }
 
@@ -151,25 +151,25 @@
 *******************************/
 
 .ui.mini.rating .icon {
-  font-size: 0.7rem;
+  font-size: 0.7142rem;
 }
 .ui.tiny.rating .icon {
-  font-size: 0.8rem;
+  font-size: 0.8571rem;
 }
 .ui.small.rating .icon {
-  font-size: 0.875rem;
+  font-size: 0.9285rem;
 }
 .ui.rating .icon {
   font-size: 1rem;
 }
 .ui.large.rating .icon {
-  font-size: 1.1rem;
+  font-size: 1.1428rem;
 }
 .ui.huge.rating .icon {
-  font-size: 1.5rem;
+  font-size: 1.4285rem;
 }
 .ui.massive.rating .icon {
-  font-size: 2rem;
+  font-size: 1.7142rem;
 }
 
 

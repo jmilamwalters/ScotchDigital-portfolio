@@ -349,10 +349,10 @@
 --------------------*/
 
 .ui.black.segment:not(.inverted) {
-  border-top: 2px solid #1b1c1d;
+  border-top: 2px solid #332f3e;
 }
 .ui.blue.segment:not(.inverted) {
-  border-top: 2px solid #3b83c0;
+  border-top: 2px solid #80c8b5;
 }
 .ui.green.segment:not(.inverted) {
   border-top: 2px solid #5bbd72;
@@ -361,19 +361,19 @@
   border-top: 2px solid #e07b53;
 }
 .ui.pink.segment:not(.inverted) {
-  border-top: 2px solid #d9499a;
+  border-top: 2px solid #f9004f;
 }
 .ui.purple.segment:not(.inverted) {
   border-top: 2px solid #564f8a;
 }
 .ui.red.segment:not(.inverted) {
-  border-top: 2px solid #d95c5c;
+  border-top: 2px solid #f9004f;
 }
 .ui.teal.segment:not(.inverted) {
-  border-top: 2px solid #00b5ad;
+  border-top: 2px solid #80c8b5;
 }
 .ui.yellow.segment:not(.inverted) {
-  border-top: 2px solid #f2c61f;
+  border-top: 2px solid #ffee00;
 }
 .ui.black.segment:not(.inverted):not(.attached) {
   border-top-left-radius: 0.2857rem !important;
@@ -418,11 +418,11 @@
 
 .ui.inverted.segment,
 .ui.inverted.black.segment {
-  background-color: #1b1c1d !important;
+  background-color: #332f3e !important;
   color: #ffffff !important;
 }
 .ui.inverted.blue.segment {
-  background-color: #3b83c0 !important;
+  background-color: #80c8b5 !important;
   color: #ffffff !important;
 }
 .ui.inverted.green.segment {
@@ -434,7 +434,7 @@
   color: #ffffff !important;
 }
 .ui.inverted.pink.segment {
-  background-color: #d9499a !important;
+  background-color: #f9004f !important;
   color: #ffffff !important;
 }
 .ui.inverted.purple.segment {
@@ -442,15 +442,15 @@
   color: #ffffff !important;
 }
 .ui.inverted.red.segment {
-  background-color: #d95c5c !important;
+  background-color: #f9004f !important;
   color: #ffffff !important;
 }
 .ui.inverted.teal.segment {
-  background-color: #00b5ad !important;
+  background-color: #80c8b5 !important;
   color: #ffffff !important;
 }
 .ui.inverted.yellow.segment {
-  background-color: #f2c61f !important;
+  background-color: #ffee00 !important;
   color: #ffffff !important;
 }
 
@@ -498,7 +498,7 @@
 }
 .ui.inverted.segment,
 .ui.primary.inverted.segment {
-  background-color: #1b1c1d;
+  background-color: #332f3e;
   color: #ffffff;
 }
 .ui.inverted.block.segment,
@@ -512,7 +512,7 @@
 
 .ui.secondary.segment {
   background: #faf9fa;
-  color: rgba(0, 0, 0, 0.8);
+  color: #332f3e;
 }
 .ui.tertiary.segment {
   background: #ebebeb;

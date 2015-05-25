@@ -20,7 +20,7 @@
   top: 0px;
   right: 0px;
   z-index: 1900;
-  border: 1px solid #cccccc;
+  border: 1px solid rgba(39, 41, 43, 0.15);
   max-width: 250px;
   background-color: #ffffff;
   padding: 0.833em 1em;
@@ -50,7 +50,7 @@
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   z-index: 2;
-  box-shadow: 1px 1px 0px 0px #b3b3b3;
+  box-shadow: 1px 1px 0px 0px rgba(15, 16, 16, 0.15);
 }
 
 
@@ -92,7 +92,7 @@
   left: 50%;
   right: auto;
   bottom: auto;
-  box-shadow: -1px -1px 0px 0px #b3b3b3;
+  box-shadow: -1px -1px 0px 0px rgba(15, 16, 16, 0.15);
 }
 .ui.bottom.left.popup {
   margin-left: 0em;
@@ -103,7 +103,7 @@
   right: auto;
   bottom: auto;
   margin-left: 0em;
-  box-shadow: -1px -1px 0px 0px #b3b3b3;
+  box-shadow: -1px -1px 0px 0px rgba(15, 16, 16, 0.15);
 }
 .ui.bottom.right.popup {
   margin-right: 0em;
@@ -114,7 +114,7 @@
   bottom: auto;
   left: auto;
   margin-left: 0em;
-  box-shadow: -1px -1px 0px 0px #b3b3b3;
+  box-shadow: -1px -1px 0px 0px rgba(15, 16, 16, 0.15);
 }
 
 /*--- Above ---*/
@@ -155,7 +155,7 @@
   bottom: auto;
   left: auto;
   margin-top: -0.325em;
-  box-shadow: 1px -1px 0px 0px #b3b3b3;
+  box-shadow: 1px -1px 0px 0px rgba(15, 16, 16, 0.15);
 }
 
 /*--- Right Center  ---*/
@@ -166,7 +166,7 @@
   bottom: auto;
   right: auto;
   margin-top: -0.325em;
-  box-shadow: -1px 1px 0px 0px #b3b3b3;
+  box-shadow: -1px 1px 0px 0px rgba(15, 16, 16, 0.15);
 }
 
 
@@ -238,7 +238,7 @@
 
 /* Inverted colors  */
 .ui.inverted.popup {
-  background: #1b1c1d;
+  background: #332f3e;
   color: #ffffff;
   border: none;
   box-shadow: none;
@@ -248,7 +248,7 @@
   color: #ffffff;
 }
 .ui.inverted.popup:before {
-  background-color: #1b1c1d;
+  background-color: #332f3e;
   box-shadow: none !important;
 }
 
@@ -265,16 +265,16 @@
 ---------------*/
 
 .ui.small.popup {
-  font-size: 0.785714rem;
+  font-size: 0.9285rem;
 }
 .ui.popup {
-  font-size: 0.85714rem;
-}
-.ui.large.popup {
   font-size: 1rem;
 }
+.ui.large.popup {
+  font-size: 1.1428rem;
+}
 .ui.huge.popup {
-  font-size: 1.14285rem;
+  font-size: 1.4285rem;
 }
 
 

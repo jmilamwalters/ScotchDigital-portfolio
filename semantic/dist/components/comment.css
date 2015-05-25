@@ -113,7 +113,7 @@
   cursor: pointer;
 }
 .ui.comments .comment a.author:hover {
-  color: #00b2f3;
+  color: #80c8b5;
 }
 
 /*--------------
@@ -234,16 +234,16 @@
 ---------------------*/
 
 .ui.small.comments {
-  font-size: 0.9em;
+  font-size: 0.9285rem;
 }
 .ui.comments {
-  font-size: 1em;
+  font-size: 1rem;
 }
 .ui.large.comments {
-  font-size: 1.1em;
+  font-size: 1.1428rem;
 }
 .ui.huge.comments {
-  font-size: 1.2em;
+  font-size: 1.4285rem;
 }
 
 

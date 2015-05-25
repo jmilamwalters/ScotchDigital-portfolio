@@ -19,6 +19,19 @@ psycho-pink         = rgba(249, 0, 79, 1)
 psycho-teal         = rgba(128, 200, 181, 1)
 psycho-yellow       = rgba(255, 238, 0, 1)
 
+/* Stack Tags */
+bootstrap-purple   = rgb(111, 84, 153)
+bootstrap-lavendar = rgb(205, 191, 227)
+buddypress-orange  = #D84800
+buddypress-black   = rgb(34, 34, 34)
+express-black      = rgb(53, 53, 53)
+express-grey       = rgb(238, 238, 238)
+keystone-blue      = rgb(52, 141, 217)
+semantic-teal      = rgb(0, 181, 173)
+wordpress-blue     = rgb(33, 117, 155)
+woocommerce-purple = #A46497
+woocommerce-grey   = #F7F7F7
+
 /* Variables : Typography
 ================================================== */
 psycho-display  = "Montserrat", sans-serif
@@ -162,6 +175,12 @@ p
   width 45%
   margin 3rem 2.5%
 
+.ui.red.button
+  background-color psycho-pink
+
+.ui.red.button:hover
+  background-color psycho-teal
+
 @media screen and (max-width: 1170px)
   .ui.cards > .card
     margin 2.1rem 2%
@@ -189,6 +208,25 @@ p
   .experience-meta,
   .experience-tasks
     stack()
+
+/*--------------
+  Proficiencies
+---------------*/
+section.proficiencies
+  background psycho-grey
+
+.ui.animated.list
+  padding-left 2%
+
+.cards .card > .content
+  background psycho-teal !important
+
+.cards .header
+  color #FFF !important
+  font-family "Lato", sans-serif !important
+  font-size 2.4rem !important
+  font-weight 700 !important
+  margin-bottom 1rem !important
 
 /*--------------
     Education
@@ -224,8 +262,20 @@ p
 
 .stack-heading
   font-family psycho-display
-  font-size 2.4rem
+  font-size 3.6rem
   text-transform uppercase
+
+.ui.red.label
+  background-color psycho-pink !important
+  border-color psycho-pink !important
+
+@media screen and (min-width: 1920px)
+  .ui.modal
+    width 64%
+
+@media screen and (min-width: 1400px)
+  .ui.modal
+    width 64%
 
 /*******************************
             Mobile

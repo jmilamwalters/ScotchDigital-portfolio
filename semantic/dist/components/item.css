@@ -129,7 +129,7 @@
 }
 .ui.items > .item > .content > .header {
   display: block;
-  margin: -0.165em 0em 0em;
+  margin: 1em 0em 1rem;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85);
@@ -229,7 +229,7 @@
   color: rgba(0, 0, 0, 0.85);
 }
 .ui.items > .item > .content > a.header:hover {
-  color: #00b2f3;
+  color: #80c8b5;
 }
 
 /* Meta */
@@ -432,7 +432,7 @@
 }
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #00b2f3;
+  color: #80c8b5;
 }
 
 /*--------------
@@ -440,7 +440,7 @@
 ---------------*/
 
 .ui.items > .item {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 

@@ -20,7 +20,7 @@
   margin: 1em 0em;
   background: #efefef;
   padding: 1em 1.5em;
-  line-height: 1.3;
+  line-height: 1.33;
   color: rgba(0, 0, 0, 0.8);
   -webkit-transition: opacity 0.2s ease, color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
           transition: opacity 0.2s ease, color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
@@ -107,7 +107,7 @@
   cursor: pointer;
   position: absolute;
   margin: 0em;
-  top: 1.15em;
+  top: 1.165em;
   right: 0.5em;
   opacity: 0.7;
   -webkit-transition: opacity 0.1s linear
@@ -238,7 +238,7 @@
 ---------------*/
 
 .ui.black.message {
-  background-color: #1b1c1d;
+  background-color: #332f3e;
   color: #ffffff;
 }
 
@@ -328,15 +328,15 @@
 /* Colors */
 .ui.inverted.message,
 .ui.black.message {
-  background-color: #1b1c1d;
+  background-color: #332f3e;
   color: #ffffff;
 }
 .ui.blue.message {
   background-color: #dff0ff;
-  color: #3b83c0;
+  color: #80c8b5;
 }
 .ui.blue.message .header {
-  color: #3576ac;
+  color: #6ec0ab;
 }
 .ui.green.message {
   background-color: #ebffed;
@@ -354,10 +354,10 @@
 }
 .ui.pink.message {
   background-color: #ffe3fb;
-  color: #d9499a;
+  color: #f9004f;
 }
 .ui.pink.message .header {
-  color: #d5348e;
+  color: #e00047;
 }
 .ui.purple.message {
   background-color: #eae7ff;
@@ -368,10 +368,10 @@
 }
 .ui.red.message {
   background-color: #ffe8e6;
-  color: #d95c5c;
+  color: #f9004f;
 }
 .ui.red.message .header {
-  color: #d44747;
+  color: #e00047;
 }
 .ui.teal.message {
   background-color: #e9ffff;

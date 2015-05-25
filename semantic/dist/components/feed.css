@@ -254,13 +254,13 @@
 *******************************/
 
 .ui.small.feed {
-  font-size: 0.9em;
+  font-size: 0.9285rem;
 }
 .ui.feed {
-  font-size: 1em;
+  font-size: 1rem;
 }
 .ui.large.feed {
-  font-size: 1.1em;
+  font-size: 1.1428rem;
 }
 
 

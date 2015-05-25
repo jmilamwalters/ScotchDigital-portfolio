@@ -12,6 +12,8 @@ Custom Styling
 
 /* Variables : Colors
 ================================================== */
+
+/* Psychopomp */
 psycho-black        = rgba(51, 47, 62, 1)
 psycho-grey         = rgba(230, 230, 230, 1)
 psycho-grey-light   = rgba(217, 217, 217, 1)
@@ -19,11 +21,111 @@ psycho-pink         = rgba(249, 0, 79, 1)
 psycho-teal         = rgba(128, 200, 181, 1)
 psycho-yellow       = rgba(255, 238, 0, 1)
 
+/* Stack Tags */
+bootstrap-purple   = rgb(111, 84, 153)
+bootstrap-lavendar = rgb(205, 191, 227)
+buddypress-orange  = #D84800
+buddypress-black   = rgb(34, 34, 34)
+express-black      = rgb(53, 53, 53)
+express-grey       = rgb(238, 238, 238)
+keystone-blue      = rgb(52, 141, 217)
+semantic-teal      = rgb(0, 181, 173)
+wordpress-blue     = rgb(33, 117, 155)
+woocommerce-purple = #A46497
+woocommerce-grey   = #F7F7F7
+
 /* Variables : Typography
 ================================================== */
 psycho-display  = "Montserrat", sans-serif
 psycho-sans     = "Lato", sans-serif
 psycho-serif    = "Merriweather", serif
+
+/* --------------------------------
+
+Scotch.IO Labels CSS
+
+-------------------------------- */
+/*
+.card .stack-tags
+  opacity .5
+  font-size 14px
+  position absolute
+  bottom 0
+  right 0
+  -webkit-transition .3s ease all
+  transition .3s ease all
+
+.card .stack-tags .labels span
+  display inline-block
+  padding 3px 8px
+  color black
+  -webkit-transition .3s ease all
+  transition .3s ease all
+*/
+
+// Clear native Semantic-UI stlyes
+.ui.cards > .card > .extra,
+.card .stack-tags .labels
+  margin 0 !important
+  padding 0 !important
+// Clear label corners
+.card .labels .ui.label
+  -webkit-border-radius 0
+  border-radius 0
+
+.card .stack-tags .labels .label
+  margin 0 !important
+  display inline-block
+  bottom 0
+  float right
+  -webkit-transition .3s ease all
+  transition .3s ease all
+
+.card .stack-tags .labels .label:last-child
+  border-top-left-radius 5px
+
+.card .stack-tags .tag-bootstrap
+  background bootstrap-purple
+  color bootstrap-lavendar
+
+.card .stack-tags .tag-buddypress
+  background buddypress-orange
+  color buddypress-black
+
+.card .stack-tags .tag-express
+  background express-grey
+  color express-black
+
+.card .stack-tags .tag-ghost
+  background #212425
+  color #718087
+
+.card .stack-tags .tag-javascript
+  background #FAC552
+  color #AE7905
+
+.card .stack-tags .tag-keystone
+  background keystone-blue
+  color white
+
+.card .stack-tags .tag-node
+  background #80BD01
+  color #D9FE8C
+
+.card .stack-tags .tag-semantic
+  background semantic-teal
+  color white
+
+.card .stack-tags .tag-wordpress
+  background wordpress-blue
+  color white
+
+.card .stack-tags .tag-woocommerce
+  background woocommerce-purple
+  color woocommerce-grey
+
+.card .meta-tags a:hover
+  color #FFF
 
 /*******************************
         Semantic UI
@@ -32,21 +134,28 @@ psycho-serif    = "Merriweather", serif
              Icon
 *******************************/
 @font-face
-  font-family: 'Icons';
-  src: url("../fonts/icons.eot");
-  src: url("../fonts/icons.eot?#iefix") format('embedded-opentype'), url("../fonts/icons.woff2") format('woff'), url("../fonts/icons.woff") format('woff'), url("../fonts/icons.ttf") format('truetype'), url("../fonts/icons.svg#icons") format('svg');
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
+  font-family 'Icons'
+  src url("../fonts/icons.eot")
+  src url("../fonts/icons.eot?#iefix") format('embedded-opentype'), url("../fonts/icons.woff2") format('woff'), url("../fonts/icons.woff") format('woff'), url("../fonts/icons.ttf") format('truetype'), url("../fonts/icons.svg#icons") format('svg')
+  font-style normal
+  font-weight normal
+  font-variant normal
+  text-decoration inherit
+  text-transform none
+
+/*******************************
+             Fixes
+*******************************/
+.ui.cards > .card > .extra, .ui.card > .extra
+  border none
+  border-top none
+
 
 /* --------------------------------
 
 FlowType CSS
 
 -------------------------------- */
-
 html
   font-size 62.5%
 
@@ -80,6 +189,13 @@ h6.education-body, .education-body
   font-weight 300
   font-size 3.6rem
 
+/* Sections */
+/* Proficiencies */
+// Line item proficiency
+.proficiencies .content .header
+  font-size 3.6rem
+  line-height 1.7
+  font-weight 300 !important
 
 /* --------------------------------
 

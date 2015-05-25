@@ -57,7 +57,7 @@
   table-layout: fixed;
   background: '';
   box-shadow: '';
-  line-height: 1.142rem;
+  line-height: 1.33;
   box-sizing: border-box;
   border-radius: 0.2857rem;
 }
@@ -240,7 +240,7 @@
   background: #f0f0f0;
 }
 .ui.steps .step.active .title {
-  color: #009fda;
+  color: #f9004f;
 }
 .ui.ordered.steps .step.active:before,
 .ui.steps .active.step .icon {
@@ -397,7 +397,7 @@
 
 .ui.small.step,
 .ui.small.steps .step {
-  font-size: 0.92857143rem;
+  font-size: 0.9285rem;
 }
 .ui.step,
 .ui.steps .step {
@@ -405,7 +405,7 @@
 }
 .ui.large.step,
 .ui.large.steps .step {
-  font-size: 1.14285714rem;
+  font-size: 1.1428rem;
 }
 
 

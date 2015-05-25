@@ -23,7 +23,7 @@
   padding: 0em 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  line-height: 1.33em;
+  line-height: 1.33;
   text-transform: none;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -170,19 +170,19 @@ h5.ui.header .sub.header {
 
 .ui.huge.header {
   min-height: 1em;
-  font-size: 2em;
+  font-size: 1.4285rem;
 }
 .ui.large.header {
-  font-size: 1.714em;
+  font-size: 1.1428rem;
 }
 .ui.medium.header {
-  font-size: 1.28em;
+  font-size: 1rem;
 }
 .ui.small.header {
-  font-size: 1.071em;
+  font-size: 0.9285rem;
 }
 .ui.tiny.header {
-  font-size: 1em;
+  font-size: 0.8571rem;
 }
 
 /* Sub Header */
@@ -269,16 +269,16 @@ h5.ui.header .sub.header {
 --------------------*/
 
 .ui.black.header {
-  color: #1b1c1d !important;
+  color: #332f3e !important;
 }
 a.ui.black.header:hover {
-  color: #1b1c1d !important;
+  color: #3a3647 !important;
 }
 .ui.blue.header {
-  color: #3b83c0 !important;
+  color: #80c8b5 !important;
 }
 a.ui.blue.header:hover {
-  color: #458ac6 !important;
+  color: #8bcdbb !important;
 }
 .ui.green.header {
   color: #5bbd72 !important;
@@ -293,10 +293,10 @@ a.ui.orange.header:hover {
   color: #e28560 !important;
 }
 .ui.pink.header {
-  color: #d9499a !important;
+  color: #f9004f !important;
 }
 a.ui.pink.header:hover {
-  color: #dc56a1 !important;
+  color: #ff0957 !important;
 }
 .ui.purple.header {
   color: #564f8a !important;
@@ -305,28 +305,28 @@ a.ui.purple.header:hover {
   color: #5c5594 !important;
 }
 .ui.red.header {
-  color: #d95c5c !important;
+  color: #f9004f !important;
 }
 a.ui.red.header:hover {
-  color: #dc6868 !important;
+  color: #ff0957 !important;
 }
 .ui.teal.header {
-  color: #00b5ad !important;
+  color: #80c8b5 !important;
 }
 a.ui.teal.header:hover {
-  color: #00c4bc !important;
+  color: #8bcdbb !important;
 }
 .ui.yellow.header {
-  color: #f2c61f !important;
+  color: #ffee00 !important;
 }
 a.ui.yellow.header:hover {
-  color: #f3ca2d !important;
+  color: #ffef0f !important;
 }
 .ui.black.dividing.header {
-  border-bottom: 2px solid #1b1c1d;
+  border-bottom: 2px solid #332f3e;
 }
 .ui.blue.dividing.header {
-  border-bottom: 2px solid #3b83c0;
+  border-bottom: 2px solid #80c8b5;
 }
 .ui.green.dividing.header {
   border-bottom: 2px solid #5bbd72;
@@ -335,19 +335,19 @@ a.ui.yellow.header:hover {
   border-bottom: 2px solid #e07b53;
 }
 .ui.pink.dividing.header {
-  border-bottom: 2px solid #d9499a;
+  border-bottom: 2px solid #f9004f;
 }
 .ui.purple.dividing.header {
   border-bottom: 2px solid #564f8a;
 }
 .ui.red.dividing.header {
-  border-bottom: 2px solid #d95c5c;
+  border-bottom: 2px solid #f9004f;
 }
 .ui.teal.dividing.header {
-  border-bottom: 2px solid #00b5ad;
+  border-bottom: 2px solid #80c8b5;
 }
 .ui.yellow.dividing.header {
-  border-bottom: 2px solid #f2c61f;
+  border-bottom: 2px solid #ffee00;
 }
 
 /*-------------------
@@ -382,10 +382,10 @@ a.ui.inverted.black.header:hover {
   color: #b2b2b2 !important;
 }
 .ui.inverted.blue.header {
-  color: #54c8ff !important;
+  color: #92d0bf !important;
 }
 a.ui.inverted.blue.header:hover {
-  color: #63cdff !important;
+  color: #9dd5c5 !important;
 }
 .ui.inverted.green.header {
   color: #2ecc40 !important;
@@ -400,10 +400,10 @@ a.ui.inverted.orange.header:hover {
   color: #ff8d2a !important;
 }
 .ui.inverted.pink.header {
-  color: #ff8edf !important;
+  color: #ff145e !important;
 }
 a.ui.inverted.pink.header:hover {
-  color: #ff9de3 !important;
+  color: #ff2368 !important;
 }
 .ui.inverted.purple.header {
   color: #cdc6ff !important;
@@ -412,16 +412,16 @@ a.ui.inverted.purple.header:hover {
   color: #dad5ff !important;
 }
 .ui.inverted.red.header {
-  color: #ff695e !important;
+  color: #ff145e !important;
 }
 a.ui.inverted.red.header:hover {
-  color: #ff776d !important;
+  color: #ff2368 !important;
 }
 .ui.inverted.teal.header {
-  color: #6dffff !important;
+  color: #92d0bf !important;
 }
 a.ui.inverted.teal.header:hover {
-  color: #7cffff !important;
+  color: #9dd5c5 !important;
 }
 .ui.inverted.yellow.header {
   color: #ffe21f !important;
@@ -510,19 +510,19 @@ a.ui.inverted.yellow.header:hover {
   border-radius: 0.3125rem;
 }
 .ui.tiny.block.header {
-  font-size: 1em;
+  font-size: 0.8571rem;
 }
 .ui.small.block.header {
-  font-size: 1.071em;
+  font-size: 0.9285rem;
 }
 .ui.block.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 1.28em;
+  font-size: 1rem;
 }
 .ui.large.block.header {
-  font-size: 1.714em;
+  font-size: 1.1428rem;
 }
 .ui.huge.block.header {
-  font-size: 2em;
+  font-size: 1.4285rem;
 }
 
 /*-------------------
@@ -580,7 +580,7 @@ a.ui.inverted.yellow.header:hover {
 --------------------*/
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 1.28em;
+  font-size: 1rem;
 }
 
 

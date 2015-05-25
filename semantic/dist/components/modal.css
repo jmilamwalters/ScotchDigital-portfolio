@@ -79,7 +79,7 @@
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #ffffff;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #ffffff;
-  margin: 0em;
+  margin: 1em 0em 1rem;
   padding: 1.2rem 2rem;
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
   font-size: 1.6em;
@@ -169,20 +169,20 @@
 }
 @media only screen and (min-width: 992px) {
   .ui.modal {
-    width: 74%;
-    margin: 0em 0em 0em -37%;
+    width: 65%;
+    margin: 0em 0em 0em -32.5%;
   }
 }
 @media only screen and (min-width: 1400px) {
   .ui.modal {
-    width: 74%;
-    margin: 0em 0em 0em -37%;
+    width: 65%;
+    margin: 0em 0em 0em -32.5%;
   }
 }
 @media only screen and (min-width: 1920px) {
   .ui.modal {
-    width: 56%;
-    margin: 0em 0em 0em -28%;
+    width: 65%;
+    margin: 0em 0em 0em -32.5%;
   }
 }
 
@@ -367,20 +367,20 @@
 }
 @media only screen and (min-width: 992px) {
   .ui.small.modal {
-    width: 44.4%;
-    margin: 0em 0em 0em -22.2%;
+    width: 39%;
+    margin: 0em 0em 0em -19.5%;
   }
 }
 @media only screen and (min-width: 1400px) {
   .ui.small.modal {
-    width: 44.4%;
-    margin: 0em 0em 0em -22.2%;
+    width: 39%;
+    margin: 0em 0em 0em -19.5%;
   }
 }
 @media only screen and (min-width: 1920px) {
   .ui.small.modal {
-    width: 33.6%;
-    margin: 0em 0em 0em -16.8%;
+    width: 39%;
+    margin: 0em 0em 0em -19.5%;
   }
 }
 
@@ -402,20 +402,20 @@
 }
 @media only screen and (min-width: 992px) {
   .ui.large.modal {
-    width: 88.8%;
-    margin: 0em 0em 0em -44.4%;
+    width: 78%;
+    margin: 0em 0em 0em -39%;
   }
 }
 @media only screen and (min-width: 1400px) {
   .ui.large.modal {
-    width: 88.8%;
-    margin: 0em 0em 0em -44.4%;
+    width: 78%;
+    margin: 0em 0em 0em -39%;
   }
 }
 @media only screen and (min-width: 1920px) {
   .ui.large.modal {
-    width: 67.2%;
-    margin: 0em 0em 0em -33.6%;
+    width: 78%;
+    margin: 0em 0em 0em -39%;
   }
 }
 

@@ -5,6 +5,6 @@
 /* Responsive Widths */
 @mobileWidth: 95%;
 @tabletWidth: 88%;
-@computerWidth: 74%;
-@largeMonitorWidth: @computerWidth;       /* 56% */
-@widescreenMonitorWidth: 56%;             /* 42% */
+@computerWidth: 65%;
+@largeMonitorWidth: @computerWidth;         /* 56% */
+@widescreenMonitorWidth: @computerWidth;    /* 42% */
