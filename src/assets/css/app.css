@@ -193,7 +193,7 @@ p {
   width: 20%;
   margin-left: 0%;
   margin-right: 0%;
-  padding: 3rem;
+  padding: 2rem;
 }
 #top-menu li:before,
 #top-menu li:after {
@@ -244,6 +244,9 @@ p {
 /*******************************
             Sections
 *******************************/
+.ui .list .item {
+  padding: 0.3em 4rem;
+}
 /*--------------
     Masthead
 ---------------*/
@@ -322,9 +325,13 @@ p {
 ---------------*/
 .ui.cards > .card > .content {
   background: #fff;
+  padding: 5rem 2rem 4rem;
 }
 .portfolio {
   background: #e6e6e6;
+}
+.portfolio-item .content a:hover {
+  color: #80c8b5 !important;
 }
 .ui.cards > .card {
   width: 45%;
@@ -339,6 +346,9 @@ p {
 @media screen and (max-width: 1170px) {
   .ui.cards > .card {
     margin: 2.1rem 2%;
+  }
+  .ui.cards > .card > .content {
+    padding: 3.6rem 1.6rem 2.4rem;
   }
 }
 @media screen and (max-width: 769px) {
@@ -452,7 +462,7 @@ section.proficiencies {
   padding-left: 2%;
 }
 .cards .card > .content {
-  background: #80c8b5 !important;
+  background: #332f3e !important;
 }
 .cards .header {
   color: #fff !important;
@@ -480,6 +490,13 @@ section.proficiencies {
 .psycho-footer h2,
 .psycho-footer p {
   color: #fff;
+}
+.psycho-footer a {
+  color: #332f3e;
+}
+.psycho-footer a:hover {
+  color: #e6e6e6;
+  border-bottom: 3px dotted #e6e6e6;
 }
 /*--------------
     Modal
@@ -518,14 +535,14 @@ section.proficiencies {
   background-color: #f9004f !important;
   border-color: #f9004f !important;
 }
-@media screen and (min-width: 1920px) {
-  .ui.modal {
-    width: 64%;
-  }
-}
 @media screen and (min-width: 1400px) {
   .ui.modal {
-    width: 64%;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .ui.modal {
+    width: 50%;
   }
 }
 /*******************************

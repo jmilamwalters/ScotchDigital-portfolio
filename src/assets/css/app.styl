@@ -152,7 +152,7 @@ p
 
 #top-menu li
   span(1/5)
-  padding 3rem
+  padding 2rem
 
 #top-menu a
   center()
@@ -182,6 +182,9 @@ p
             Sections
 *******************************/
 
+.ui .list .item
+  padding 0.3em 4rem
+
 /*--------------
     Masthead
 ---------------*/
@@ -210,9 +213,13 @@ p
 ---------------*/
 .ui.cards > .card > .content
   background white
+  padding 5rem 2rem 4rem
 
 .portfolio
   background psycho-grey
+
+.portfolio-item .content a:hover
+  color psycho-teal !important
 
 .ui.cards > .card
   width 45%
@@ -227,6 +234,8 @@ p
 @media screen and (max-width: 1170px)
   .ui.cards > .card
     margin 2.1rem 2%
+  .ui.cards > .card > .content
+    padding 3.6rem 1.6rem 2.4rem
 
 @media screen and (max-width: 769px)
   .ui.cards > .card
@@ -262,7 +271,7 @@ section.proficiencies
   padding-left 2%
 
 .cards .card > .content
-  background psycho-teal !important
+  background psycho-black !important
 
 .cards .header
   color #FFF !important
@@ -291,6 +300,13 @@ section.proficiencies
 .psycho-footer p
   color white
 
+.psycho-footer a
+  color psycho-black
+
+.psycho-footer a:hover
+  color psycho-grey
+  border-bottom 3px dotted psycho-grey
+
 /*--------------
     Modal
 ---------------*/
@@ -313,13 +329,14 @@ section.proficiencies
   background-color psycho-pink !important
   border-color psycho-pink !important
 
-@media screen and (min-width: 1920px)
-  .ui.modal
-    width 64%
-
 @media screen and (min-width: 1400px)
   .ui.modal
-    width 64%
+    width 60%
+
+@media screen and (min-width: 1920px)
+  .ui.modal
+    width 50%
+
 
 /*******************************
             Mobile
