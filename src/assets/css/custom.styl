@@ -63,6 +63,13 @@ Scotch.IO Labels CSS
   transition .3s ease all
 */
 
+/*******************************
+             Fixes
+*******************************/
+// Clear borders
+.ui.cards > .card > .extra, .ui.card > .extra
+  border none
+  border-top none
 // Clear native Semantic-UI stlyes
 .ui.cards > .card > .extra,
 .card .stack-tags .labels
@@ -73,6 +80,9 @@ Scotch.IO Labels CSS
   -webkit-border-radius 0
   border-radius 0
 
+/*******************************
+        Stack Labels
+*******************************/
 .card .stack-tags .labels .label
   margin 0 !important
   display inline-block
@@ -143,14 +153,6 @@ Scotch.IO Labels CSS
   text-decoration inherit
   text-transform none
 
-/*******************************
-             Fixes
-*******************************/
-.ui.cards > .card > .extra, .ui.card > .extra
-  border none
-  border-top none
-
-
 /* --------------------------------
 
 FlowType CSS
@@ -180,12 +182,15 @@ h6.title
   font-size 3.6rem
   text-transform uppercase !important
 
-h6.education-heading, .education-heading
+h6.education-heading,
+.education-heading
+  font-family psycho-display
   font-weight 900
   font-size 3.6rem
   text-transform uppercase
 
-h6.education-body, .education-body
+h6.education-body,
+h6.education-body
   font-weight 300
   font-size 3.6rem
 

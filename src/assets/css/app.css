@@ -52,6 +52,28 @@ h6.title {
   font-size: 3.6rem !important;
   text-transform: uppercase !important;
 }
+.portfolio-item a.header {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 400 !important;
+  text-align: center;
+}
+.portfolio-item a.header:before,
+.portfolio-item a.header:after {
+  content: '';
+  display: table;
+}
+.portfolio-item a.header:after {
+  clear: both;
+}
 .education-heading {
   font-weight: 900;
   text-transform: uppercase;
@@ -60,7 +82,7 @@ h6.title {
   font-weight: 300;
 }
 main {
-  background: #80c8b5;
+  background: #fff;
 }
 main.main-homepage {
   padding: 250px 0 0;
@@ -132,6 +154,86 @@ p {
 }
 .psychopink {
   color: #f9004f;
+}
+/*******************************
+           Top Menu
+*******************************/
+#top-menu {
+  position: fixed;
+  z-index: 600;
+  background: #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.top-menu-container {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.top-menu-container:before,
+.top-menu-container:after {
+  content: '';
+  display: table;
+}
+.top-menu-container:after {
+  clear: both;
+}
+#top-menu li {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 3rem;
+}
+#top-menu li:before,
+#top-menu li:after {
+  content: '';
+  display: table;
+}
+#top-menu li:after {
+  clear: both;
+}
+#top-menu a {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  color: #f9004f;
+  font-size: 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.5s all ease-out;
+  -moz-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+}
+#top-menu a:before,
+#top-menu a:after {
+  content: '';
+  display: table;
+}
+#top-menu a:after {
+  clear: both;
+}
+#top-menu a:hover {
+  color: #332f3e;
+}
+#top-menu li.active a {
+  color: #332f3e;
 }
 /*******************************
           Semantic UI
@@ -410,6 +512,7 @@ section.proficiencies {
   font-family: "Montserrat", sans-serif;
   font-size: 3.6rem;
   text-transform: uppercase;
+  font-weight: normal;
 }
 .ui.red.label {
   background-color: #f9004f !important;

@@ -14,7 +14,8 @@
     <!-- Le Styles -->
 <!--     <link href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.2/semantic.css" type="text/css" rel="stylesheet"> -->
     <link href="./assets/css/semantic.css" type="text/css" rel="stylesheet">
-    <link href="./assets/css/navstyles.css" type="text/css" rel="stylesheet">
+<!--     <link href="./assets/css/navstyles.css" type="text/css" rel="stylesheet"> -->
+<!--     <link href="./assets/css/menu-style-guide.css" type="text/css" rel="stylesheet"> -->
     <link href="./assets/css/app.css" type="text/css" rel="stylesheet">
     <link href="./assets/css/custom.css" type="text/css" rel="stylesheet">
 
@@ -33,8 +34,33 @@
 </head>
 <body>
 
-    <!-- MAIN CONTENT -->
-    <main class="main-homepage">
+  <!-- MAIN CONTENT -->
+  <main class="main-homepage">
+
+    <!-- TOP MENU -->
+    <div id="top-menu">
+      <div class="ui segment raised">
+        <div class="top-menu-container">
+          <ul class="ui secondary menu">
+            <li class="item">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="item">
+              <a href="#proficiencies">Proficiencies</a>
+            </li>
+            <li class="item">
+              <a href="#education">Education</a>
+            </li>
+            <li class="item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
       <!-- Masthead -->
       <header class="masthead">
@@ -52,7 +78,7 @@
                   </h1>
               </div>
               <div class="epigraph-recto">
-                <img src="assets/img/button-your-collar.jpg" class="ui fluid circular image" id="profile-photo">
+                <img src="assets/img/button-your-collar-opt.jpg" class="ui fluid circular image" id="profile-photo">
               </div>
             </div>
           </div>
@@ -60,7 +86,7 @@
       </header><!-- /.masthead -->
 
       <!-- PORTFOLIO -->
-      <section class="portfolio arctic_scroll" id="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="page-container">
 
           <!-- Portfolio Heading -->
@@ -89,7 +115,7 @@
                   <img src="./assets/img/portfolio-image_neworleansglassworks.jpg">
                 </div>
                 <div class="content">
-                  <a class="header">New Orleans Glassworks &amp; Printmaking Studio</a>
+                  <a class="header">New Orleans Glassworks</a>
                 </div>
                 <div class="extra content stack-tags">
                   <div class="ui bottom attached massive labels">
@@ -236,7 +262,7 @@
       </section>
 
       <!-- EXPERIENCE -->
-      <section class="experience arctic_scroll" id="experience">
+      <section class="experience" id="experience">
         <div class="page-container">
           <div class="row">
             <h2 class="section-title">Experience</h2>
@@ -345,28 +371,28 @@
                   CMS
               </h6>
               <div class="content">
-                <div class="ui animated list">
+                <div class="ui list">
                   <div class="item">
-                    <i class="large plus icon"></i>
+                    <i class="plus icon"></i>
 <!--                     <img class="ui avatar image" src="./assets/img/avatar/small/helen.jpg"> -->
                     <div class="content">
                       <div class="header">WordPress, <em>et al</em> (i.e., WP Multisite, BuddyPress, bbPress)</div>
                     </div>
                   </div>
                   <div class="item">
-                    <i class="large plus icon"></i>
+                    <i class="plus icon"></i>
                     <div class="content">
                       <div class="header">Ghost</div>
                     </div>
                   </div>
                    <div class="item">
-                    <i class="large plus icon"></i>
+                    <i class="plus icon"></i>
                     <div class="content">
                       <div class="header">KeystoneJS</div>
                     </div>
                   </div>
                   <div class="item">
-                    <i class="large plus icon"></i>
+                    <i class="plus icon"></i>
                     <div class="content">
                       <div class="header">Drupal (working-knowledge)</div>
                     </div>
@@ -380,7 +406,7 @@
                   Databases
               </h6>
               <div class="content">
-                <div class="ui animated list">
+                <div class="ui list">
                   <div class="item">
                     <i class="large plus icon"></i>
                     <div class="content">
@@ -414,7 +440,7 @@
                   JavaScript Frameworks
               </h6>
               <div class="content">
-                <div class="ui animated list">
+                <div class="ui list">
                    <div class="item">
                     <i class="large plus icon"></i>
                     <div class="content">
@@ -425,6 +451,12 @@
                     <i class="large plus icon"></i>
                     <div class="content">
                       <div class="header">ExpressJS</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <i class="large plus icon"></i>
+                    <div class="content">
+                      <div class="header">AngularJS</div>
                     </div>
                   </div>
                   <div class="item">
@@ -448,7 +480,7 @@
                   Programming Languages
               </h6>
               <div class="content">
-                <div class="ui animated list">
+                <div class="ui list">
                   <div class="item">
                     <i class="large plus icon"></i>
                     <div class="content">
@@ -482,7 +514,7 @@
                   Web Frameworks
               </h6>
               <div class="content">
-                <div class="ui animated list">
+                <div class="ui list">
                   <div class="item">
                     <i class="large plus icon"></i>
                     <div class="content">
@@ -511,7 +543,7 @@
                   Web Servers
               </h6>
               <div class="content">
-                <div class="ui animated list">
+                <div class="ui list">
                   <div class="item">
                     <i class="large plus icon"></i>
                     <div class="content">
@@ -545,7 +577,7 @@
                   E-Commerce
               </h6>
               <div class="content">
-                <div class="ui animated list">
+                <div class="ui list">
                   <div class="item">
                     <i class="large plus icon"></i>
                     <div class="content">
@@ -567,7 +599,7 @@
                   Et Cetera
               </h6>
               <div class="content">
-                <div class="ui animated list">
+                <div class="ui list">
                   <div class="item">
                     <i class="large plus icon"></i>
                     <div class="content">
@@ -622,7 +654,9 @@
       <section class="education" id="education">
         <div class="page-container">
           <div class="row">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title">
+              Education
+            </h2>
             <div class="ui divider"></div>
             <h6 class="education-heading psychoblack">
               Bachelor of Arts, English &amp; Philosophy
@@ -638,14 +672,26 @@
       </section>
 
       <!-- FOOTER -->
-      <section class="psycho-footer" id="psycho-footer">
+      <section class="psycho-footer" id="contact">
         <div class="page-container">
           <div class="row">
-            <h2 class="section-title">Footer</h2>
+            <h2 class="section-title">
+              Contact
+            </h2>
             <div class="ui inverted divider"></div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic repellendus, earum perferendis provident magni praesentium culpa saepe possimus officia ullam assumenda dolore aliquid quisquam architecto odio rem! Doloremque, voluptatem.
-            </p>
+            <h6 class="education-body">
+              <address>
+                <ul class="contact-information">
+                  <li><a href="mailto:jonathan@psychopompllc.com">jonathan@psychopompllc.com</a></li>
+                  <li>+1 504 444 2513</li>
+                  <li>
+                    <span>923 Constance Street</span>
+                    <span>Suite 211</span>
+                    <span>New Orleans, Louisiana 70130</span>
+                  </li>
+                </ul>
+              </address>
+            </h6>
           </div>
         </div>
       </section>
@@ -683,10 +729,10 @@
         </div>
         <div class="actions">
           <div class="two fluid ui inverted buttons">
-            <div class="ui massive blue basic inverted button">
+            <a href="http://github.com/jw-psychopomp/NolaDNA-webapp" class="ui massive blue basic inverted button" target="_blank">
               <i class="github icon"></i>
               View GitHub
-            </div>
+            </a>
             <div class="ui massive pink basic inverted button">
               <i class="remove icon"></i>
               Visit Website
@@ -695,19 +741,21 @@
         </div>
       </div>
 
-
     </main>
+
 
 <!-- MENU -->
 <!-- Navigation Trigger -->
+<!--
 <a href="#psychopomp-navigation" class="navigation-trigger">Menu
   <span class="navigation-icon"></span>
   <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
     <circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
   </svg>
 </a>
-
+ -->
 <!-- Navigation Splash -->
+<!--
 <header id="psychopomp-navigation" class="psychopomp-navigation">
   <div class="navigation-wrapper">
     <div class="half-block">
@@ -733,15 +781,14 @@
     </div>
   </div>
 </header>
+ -->
 
 <!-- JAVASCRTIPT -->
 <!-- Le Scripts -->
 <script src="./assets/js/vendor/jquery.slabtext.js"></script>
-<script src="./assets/js/vendor/jquery.flowtype.js"></script>
-<!-- <script src="./assets/js/arctic.js"></script> -->
-<script src="./assets/js/main.js"></script>
-<!-- <script src="./assets/js/application.js"></script> -->
-<script src="./assets/js/custom.js"></script>
+<!-- <script src="./assets/js/main.js"></script> -->
+<script src="./assets/js/application.js"></script>
+<!-- <script src="./assets/js/custom.js"></script> -->
 
 <!-- Le Plugins -->
 <script>

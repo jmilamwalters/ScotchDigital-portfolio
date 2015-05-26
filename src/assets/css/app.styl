@@ -80,6 +80,13 @@ h6.title
   font-size 3.6rem !important
   text-transform uppercase !important
 
+.portfolio-item a.header
+  center()
+  font-family psycho-display !important
+  font-weight 400 !important
+
+  text-align center
+
 .education-heading
   font-weight 900
   text-transform uppercase
@@ -88,7 +95,7 @@ h6.title
   font-weight 300
 
 main
-  background psycho-teal
+  background white
 
 main.main-homepage
   padding 250px 0 0
@@ -128,6 +135,42 @@ p
 
 .psychopink
   color psycho-pink
+
+/*******************************
+           Top Menu
+*******************************/
+#top-menu
+  position fixed
+  z-index 600
+  background white
+  left 0
+  right 0
+  top 0
+
+.top-menu-container
+  center(max-width: 1440px, pad: 2rem)
+
+#top-menu li
+  span(1/5)
+  padding 3rem
+
+#top-menu a
+  center()
+  color psycho-pink
+  font-size 2.4rem
+  text-align center
+  text-decoration none
+  -webkit-transition .5s all ease-out
+  -moz-transition .5s all ease-out
+  transition .5s all ease-out
+//  border-top 3px solid psycho-black
+
+#top-menu a:hover
+  color psycho-black
+
+#top-menu li.active a
+  color psycho-black
+//  border-top: 3px solid psycho-grey
 
 /*******************************
           Semantic UI
@@ -264,6 +307,7 @@ section.proficiencies
   font-family psycho-display
   font-size 3.6rem
   text-transform uppercase
+  font-weight normal
 
 .ui.red.label
   background-color psycho-pink !important
