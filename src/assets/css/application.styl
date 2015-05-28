@@ -1,21 +1,51 @@
+@import 'jeet'
+
 /* --------------------------------
 
 Application Styling
 
 -------------------------------- */
 
-@import 'jeet'
+/* =================================================
+   1. Utilities - These things get used a lot
+   ================================================= */
 
-/* ==========================================================================
-   3. Utilities - These things get used a lot
-   ========================================================================== */
+/* Variables : Colors
+================================================== */
+psycho-black        = rgba(51, 47, 62, 1)
+psycho-grey         = rgba(230, 230, 230, 1)
+psycho-grey-light   = rgba(217, 217, 217, 1)
+psycho-pink         = rgba(249, 0, 79, 1)
+psycho-teal         = rgba(128, 200, 181, 1)
+psycho-yellow       = rgba(255, 238, 0, 1)
+
+/* Stack Tags */
+bootstrap-purple   = rgb(111, 84, 153)
+bootstrap-lavendar = rgb(205, 191, 227)
+buddypress-orange  = #D84800
+buddypress-black   = rgb(34, 34, 34)
+express-black      = rgb(53, 53, 53)
+express-grey       = rgb(238, 238, 238)
+keystone-blue      = rgb(52, 141, 217)
+semantic-teal      = rgb(0, 181, 173)
+wordpress-blue     = rgb(33, 117, 155)
+woocommerce-purple = #A46497
+woocommerce-grey   = #F7F7F7
+
+/* Variables : Typography
+================================================== */
+psycho-display  = "Montserrat", sans-serif
+psycho-sans     = "Lato", sans-serif
+psycho-serif    = "Merriweather", serif
+
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner
   position relative
   width 80%
   max-width 710px
   margin 0 auto
-/* Centres vertically yo. (IE8+) */
+
+/* Centers vertically (IE8+) */
 .vertical
   display table-cell
   vertical-align middle
@@ -24,43 +54,296 @@ Application Styling
             Globals
 *******************************/
 
-.page-container
-  center(max-width: 1170px, pad: 3rem)
-.row
-  margin 2rem 0rem
 h1
   line-height 0.9
-  font-family 'Lato', sans-serif
+  font-family psycho-display
   font-size 1.8rem
-  font-weight bold
+  font-weight 700
   text-transform uppercase !important
+
+h2
+  font-family psycho-sans
+  font-size 4.2rem
+
+h2.section-title
+  font-family psycho-sans
+  text-transform uppercase !important
+  font-weight 300
+
+h6
+  font-family psycho-sans
+  font-size 3.6rem
+
+h6.title
+  color psycho-pink !important
+  font-family psycho-display !important
+  font-size 3.6rem !important
+  text-transform uppercase !important
+
+.portfolio-item a.header
+  center()
+  font-family psycho-display !important
+  font-weight 400 !important
+
+  text-align center
+
+.education-heading
+  font-weight 900
+  text-transform uppercase
+
+.education-body
+  font-weight 300
+
+main
+  background white
+
+main.main-homepage
+  padding 250px 0 0
+
+main h1,
+main h2,
+main p,
+p
+  color psycho-black
+  max-width 100%
+
+main p,
+p
+  font-family psycho-sans
+  font-weight 400
+  text-align left
+
+.content-container
+  center(max-width: 960px, pad: 2rem)
+
+.page-container
+  padding-top 5rem
+  padding-right 0
+  padding-bottom 5rem
+  padding-left 0
+
+.row
+  center(max-width: 1170px, pad: 3rem)
+  padding-top 1rem
+  padding-bottom 1rem
+
+.alt
+  background psycho-grey
+
+.psychoblack
+  color psycho-black
+
+.psychopink
+  color psycho-pink
+
+/*******************************
+           Top Menu
+*******************************/
+#top-menu
+  position fixed
+  z-index 600
+  background white
+  left 0
+  right 0
+  top 0
+
+.top-menu-container
+  center(max-width: 1440px, pad: 2rem)
+
+#top-menu li
+  span(1/5)
+  padding 2rem
+
+#top-menu a
+  center()
+  color psycho-pink
+  font-size 2.4rem
+  text-align center
+  text-decoration none
+  -webkit-transition .5s all ease-out
+  -moz-transition .5s all ease-out
+  transition .5s all ease-out
+//  border-top 3px solid psycho-black
+
+#top-menu a:hover
+  color psycho-black
+
+#top-menu li.active a
+  color psycho-black
+//  border-top: 3px solid psycho-grey
+
+/*******************************
+          Semantic UI
+*******************************/
+.image
+  width 100%
 
 /*******************************
             Sections
 *******************************/
 
+.ui .list .item
+  padding 0.3em 4rem
+
 /*--------------
     Masthead
 ---------------*/
+.masthead
+ background white
+
 .headstone
   center()
+
 .epigraph-verso
   col(8/16, offset: 1/16)
+  padding-top 4rem
+
 .epigraph-recto
   col(5/16)
 
-/* Big cover image on the home page */
+#epigraph-name
+  color psycho-black
+  margin-bottom 0.2rem
 
-.main-header
-  position relative
-  display table
-  width 100%
-  height 100vh
-  margin-bottom 5rem
-  text-align center
-  /*  background #222 no-repeat center center*/
-  /*  background-size cover*/
-  overflow hidden
+#epigraph-title
+  color psycho-pink
 
-.main-header.inner
-  width 80%
+/*--------------
+    Portfolio
+---------------*/
+.ui.cards > .card > .content
+  background white
+  padding 5rem 2rem 4rem
+
+.portfolio
+  background psycho-grey
+
+.portfolio-item .content a:hover
+  color psycho-teal !important
+
+.ui.cards > .card
+  width 45%
+  margin 3rem 2.5%
+
+.ui.red.button
+  background-color psycho-pink
+
+.ui.red.button:hover
+  background-color psycho-teal
+
+@media screen and (max-width: 1170px)
+  .ui.cards > .card
+    margin 2.1rem 2%
+  .ui.cards > .card > .content
+    padding 3.6rem 1.6rem 2.4rem
+
+@media screen and (max-width: 769px)
+  .ui.cards > .card
+    stack()
+    center()
+
+/*--------------
+    Experience
+---------------*/
+.experience
+  background white
+
+.experience .row
+  margin-bottom 3.6rem
+
+.experience-meta
+  col(5/12)
+.experience-tasks
+  col(7/12)
+
+@media screen and (max-width: 900px)
+  .experience-meta,
+  .experience-tasks
+    stack()
+
+/*--------------
+  Proficiencies
+---------------*/
+section.proficiencies
+  background psycho-grey
+
+.ui.animated.list
+  padding-left 2%
+
+.cards .card > .content
+  background psycho-black !important
+
+.cards .header
+  color #FFF !important
+  font-family "Lato", sans-serif !important
+  font-size 2.4rem !important
+  font-weight 700 !important
+  margin-bottom 1rem !important
+
+/*--------------
+    Education
+---------------*/
+.education
+  background white
+
+.education h2,
+.education p
+  color psycho-black
+
+/*--------------
+    Footer
+---------------*/
+.psycho-footer
+  background psycho-pink
+
+.psycho-footer h2,
+.psycho-footer p
+  color white
+
+.psycho-footer a
+  color psycho-black
+
+.psycho-footer a:hover
+  color psycho-grey
+  border-bottom 3px dotted psycho-grey
+
+/*--------------
+    Modal
+---------------*/
+.thestack
+  center()
+  padding 2rem
+
+.stack-heading
+  font-family psycho-display
+  font-size 3.6rem
+  text-transform uppercase
+  font-weight normal
+
+.ui.red.label
+  background-color psycho-pink !important
+  border-color psycho-pink !important
+
+/* Contact Dimmer */
+.ui.dimmer.contact-bg
+  background alpha(psycho-pink, 0.85)
+
+/*******************************
+            Mobile
+*******************************/
+@media screen and (max-width: 800px)
+  .epigraph-verso,
+  .epigraph-recto,
+  #epigraph-name,
+  #epigraph-title
+    col(1/1, cycle: 1)
+  #profile-photo
+    center()
+    max-width 80%
+
+/*******************************
+            Desktop
+*******************************/
+@media screen and (min-width: 1400px)
+  .ui.modal
+    width 55%

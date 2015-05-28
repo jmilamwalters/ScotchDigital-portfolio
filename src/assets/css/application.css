@@ -3,9 +3,14 @@
 Application Styling
 
 -------------------------------- */
-/* ==========================================================================
-   3. Utilities - These things get used a lot
-   ========================================================================== */
+/* =================================================
+   1. Utilities - These things get used a lot
+   ================================================= */
+/* Variables : Colors
+================================================== */
+/* Stack Tags */
+/* Variables : Typography
+================================================== */
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner {
   position: relative;
@@ -13,7 +18,7 @@ Application Styling
   max-width: 710px;
   margin: 0 auto;
 }
-/* Centres vertically yo. (IE8+) */
+/* Centers vertically (IE8+) */
 .vertical {
   display: table-cell;
   vertical-align: middle;
@@ -21,7 +26,106 @@ Application Styling
 /*******************************
             Globals
 *******************************/
+h1 {
+  line-height: 0.9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase !important;
+}
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 4.2rem;
+}
+h2.section-title {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase !important;
+  font-weight: 300;
+}
+h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.6rem;
+}
+h6.title {
+  color: #f9004f !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 3.6rem !important;
+  text-transform: uppercase !important;
+}
+.portfolio-item a.header {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 400 !important;
+  text-align: center;
+}
+.portfolio-item a.header:before,
+.portfolio-item a.header:after {
+  content: '';
+  display: table;
+}
+.portfolio-item a.header:after {
+  clear: both;
+}
+.education-heading {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.education-body {
+  font-weight: 300;
+}
+main {
+  background: #fff;
+}
+main.main-homepage {
+  padding: 250px 0 0;
+}
+main h1,
+main h2,
+main p,
+p {
+  color: #332f3e;
+  max-width: 100%;
+}
+main p,
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+.content-container {
+  *zoom: 1;
+  width: auto;
+  max-width: 960px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.content-container:before,
+.content-container:after {
+  content: '';
+  display: table;
+}
+.content-container:after {
+  clear: both;
+}
 .page-container {
+  padding-top: 5rem;
+  padding-right: 0;
+  padding-bottom: 5rem;
+  padding-left: 0;
+}
+.row {
   *zoom: 1;
   width: auto;
   max-width: 1170px;
@@ -31,24 +135,124 @@ Application Styling
   margin-left: auto;
   padding-left: 3rem;
   padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.page-container:before,
-.page-container:after {
+.row:before,
+.row:after {
   content: '';
   display: table;
 }
-.page-container:after {
+.row:after {
   clear: both;
 }
-.row {
-  margin: 2rem 0rem;
+.alt {
+  background: #e6e6e6;
+}
+.psychoblack {
+  color: #332f3e;
+}
+.psychopink {
+  color: #f9004f;
+}
+/*******************************
+           Top Menu
+*******************************/
+#top-menu {
+  position: fixed;
+  z-index: 600;
+  background: #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.top-menu-container {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.top-menu-container:before,
+.top-menu-container:after {
+  content: '';
+  display: table;
+}
+.top-menu-container:after {
+  clear: both;
+}
+#top-menu li {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 2rem;
+}
+#top-menu li:before,
+#top-menu li:after {
+  content: '';
+  display: table;
+}
+#top-menu li:after {
+  clear: both;
+}
+#top-menu a {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  color: #f9004f;
+  font-size: 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.5s all ease-out;
+  -moz-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+}
+#top-menu a:before,
+#top-menu a:after {
+  content: '';
+  display: table;
+}
+#top-menu a:after {
+  clear: both;
+}
+#top-menu a:hover {
+  color: #332f3e;
+}
+#top-menu li.active a {
+  color: #332f3e;
+}
+/*******************************
+          Semantic UI
+*******************************/
+.image {
+  width: 100%;
 }
 /*******************************
             Sections
 *******************************/
+.ui .list .item {
+  padding: 0.3em 4rem;
+}
 /*--------------
     Masthead
 ---------------*/
+.masthead {
+  background: #fff;
+}
 .headstone {
   *zoom: 1;
   width: auto;
@@ -76,6 +280,7 @@ Application Styling
   width: 48.5%;
   margin-left: 6.4375%;
   margin-right: 3%;
+  padding-top: 4rem;
 }
 .epigraph-verso:before,
 .epigraph-verso:after {
@@ -108,25 +313,300 @@ Application Styling
 .epigraph-recto:last-child {
   margin-right: 0%;
 }
-/* Big cover image on the home page */
-.main-header {
-  position: relative;
+#epigraph-name {
+  color: #332f3e;
+  margin-bottom: 0.2rem;
+}
+#epigraph-title {
+  color: #f9004f;
+}
+/*--------------
+    Portfolio
+---------------*/
+.ui.cards > .card > .content {
+  background: #fff;
+  padding: 5rem 2rem 4rem;
+}
+.portfolio {
+  background: #e6e6e6;
+}
+.portfolio-item .content a:hover {
+  color: #80c8b5 !important;
+}
+.ui.cards > .card {
+  width: 45%;
+  margin: 3rem 2.5%;
+}
+.ui.red.button {
+  background-color: #f9004f;
+}
+.ui.red.button:hover {
+  background-color: #80c8b5;
+}
+@media screen and (max-width: 1170px) {
+  .ui.cards > .card {
+    margin: 2.1rem 2%;
+  }
+  .ui.cards > .card > .content {
+    padding: 3.6rem 1.6rem 2.4rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .ui.cards > .card {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    *zoom: 1;
+    width: auto;
+    max-width: 1440px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ui.cards > .card:first-child {
+    margin-left: auto;
+  }
+  .ui.cards > .card:last-child {
+    margin-right: auto;
+  }
+  .ui.cards > .card:before,
+  .ui.cards > .card:after {
+    content: '';
+    display: table;
+  }
+  .ui.cards > .card:after {
+    clear: both;
+  }
+}
+/*--------------
+    Experience
+---------------*/
+.experience {
+  background: #fff;
+}
+.experience .row {
+  margin-bottom: 3.6rem;
+}
+.experience-meta {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 39.91666666666667%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.experience-meta:before,
+.experience-meta:after {
+  content: '';
   display: table;
-  width: 100%;
-  height: 100vh;
-  margin-bottom: 5rem;
-  text-align: center;
-  background: #222 no-repeat center center;
-  background-size: cover;
-  overflow: hidden;
 }
-h1 {
-  line-height: 0.9;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-transform: uppercase !important;
+.experience-meta:after {
+  clear: both;
 }
-.main-header .inner {
-  width: 80%;
+.experience-meta:last-child {
+  margin-right: 0%;
+}
+.experience-tasks {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 57.083333333333336%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.experience-tasks:before,
+.experience-tasks:after {
+  content: '';
+  display: table;
+}
+.experience-tasks:after {
+  clear: both;
+}
+.experience-tasks:last-child {
+  margin-right: 0%;
+}
+@media screen and (max-width: 900px) {
+  .experience-meta,
+  .experience-tasks {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .experience-meta:first-child,
+  .experience-tasks:first-child {
+    margin-left: auto;
+  }
+  .experience-meta:last-child,
+  .experience-tasks:last-child {
+    margin-right: auto;
+  }
+}
+/*--------------
+  Proficiencies
+---------------*/
+section.proficiencies {
+  background: #e6e6e6;
+}
+.ui.animated.list {
+  padding-left: 2%;
+}
+.cards .card > .content {
+  background: #332f3e !important;
+}
+.cards .header {
+  color: #fff !important;
+  font-family: "Lato", sans-serif !important;
+  font-size: 2.4rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+}
+/*--------------
+    Education
+---------------*/
+.education {
+  background: #fff;
+}
+.education h2,
+.education p {
+  color: #332f3e;
+}
+/*--------------
+    Footer
+---------------*/
+.psycho-footer {
+  background: #f9004f;
+}
+.psycho-footer h2,
+.psycho-footer p {
+  color: #fff;
+}
+.psycho-footer a {
+  color: #332f3e;
+}
+.psycho-footer a:hover {
+  color: #e6e6e6;
+  border-bottom: 3px dotted #e6e6e6;
+}
+/*--------------
+    Modal
+---------------*/
+.thestack {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 2rem;
+}
+.thestack:before,
+.thestack:after {
+  content: '';
+  display: table;
+}
+.thestack:after {
+  clear: both;
+}
+.stack-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.ui.red.label {
+  background-color: #f9004f !important;
+  border-color: #f9004f !important;
+}
+/* Contact Dimmer */
+.ui.dimmer.contact-bg {
+  background: rgba(249,0,79,0.85);
+}
+/*******************************
+            Mobile
+*******************************/
+@media screen and (max-width: 800px) {
+  .epigraph-verso,
+  .epigraph-recto,
+  #epigraph-name,
+  #epigraph-title {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  .epigraph-verso:before,
+  .epigraph-recto:before,
+  #epigraph-name:before,
+  #epigraph-title:before,
+  .epigraph-verso:after,
+  .epigraph-recto:after,
+  #epigraph-name:after,
+  #epigraph-title:after {
+    content: '';
+    display: table;
+  }
+  .epigraph-verso:after,
+  .epigraph-recto:after,
+  #epigraph-name:after,
+  #epigraph-title:after {
+    clear: both;
+  }
+  .epigraph-verso:nth-child(1n),
+  .epigraph-recto:nth-child(1n),
+  #epigraph-name:nth-child(1n),
+  #epigraph-title:nth-child(1n) {
+    margin-right: 0%;
+    float: right;
+  }
+  .epigraph-verso:nth-child(1n+1),
+  .epigraph-recto:nth-child(1n+1),
+  #epigraph-name:nth-child(1n+1),
+  #epigraph-title:nth-child(1n+1) {
+    clear: both;
+  }
+  #profile-photo {
+    *zoom: 1;
+    width: auto;
+    max-width: 1440px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 80%;
+  }
+  #profile-photo:before,
+  #profile-photo:after {
+    content: '';
+    display: table;
+  }
+  #profile-photo:after {
+    clear: both;
+  }
+}
+/*******************************
+            Desktop
+*******************************/
+@media screen and (min-width: 1400px) {
+  .ui.modal {
+    width: 55%;
+  }
 }

@@ -1,0 +1,195 @@
+/* --------------------------------
+
+Custom Styling
+
+-------------------------------- */
+/* =================================================
+   1. Utilities - These things get used a lot
+   ================================================= */
+/* Variables : Colors
+================================================== */
+/* Psychopomp */
+/* Stack Tags */
+/* Variables : Typography
+================================================== */
+/* --------------------------------
+
+Scotch.IO Labels CSS
+
+-------------------------------- */
+/*
+.card .stack-tags
+  opacity .5
+  font-size 14px
+  position absolute
+  bottom 0
+  right 0
+  -webkit-transition .3s ease all
+  transition .3s ease all
+
+.card .stack-tags .labels span
+  display inline-block
+  padding 3px 8px
+  color black
+  -webkit-transition .3s ease all
+  transition .3s ease all
+*/
+/*******************************
+             Fixes
+*******************************/
+.ui.cards > .card > .extra,
+.ui.card > .extra {
+  border: none;
+  border-top: none;
+}
+.ui.cards > .card > .extra,
+.card .stack-tags .labels {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.card .labels .ui.label {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/*******************************
+        Stack Labels
+*******************************/
+.card .stack-tags .labels .label {
+  margin: 0 !important;
+  display: inline-block;
+  bottom: 0;
+  float: right;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.card .stack-tags .labels .label:last-child {
+  border-top-left-radius: 5px;
+}
+.card .stack-tags .tag-bootstrap {
+  background: #6f5499;
+  color: #cdbfe3;
+}
+.card .stack-tags .tag-buddypress {
+  background: #d84800;
+  color: #222;
+}
+.card .stack-tags .tag-express {
+  background: #eee;
+  color: #353535;
+}
+.card .stack-tags .tag-ghost {
+  background: #718087;
+  color: #212425;
+}
+.card .stack-tags .tag-javascript {
+  background: #fac552;
+  color: #ae7905;
+}
+.card .stack-tags .tag-keystone {
+  background: #348dd9;
+  color: #fff;
+}
+.card .stack-tags .tag-node {
+  background: #80bd01;
+  color: #d9fe8c;
+}
+.card .stack-tags .tag-semantic {
+  background: #00b5ad;
+  color: #fff;
+}
+.card .stack-tags .tag-wordpress {
+  background: #21759b;
+  color: #fff;
+}
+.card .stack-tags .tag-woocommerce {
+  background: #a46497;
+  color: #f7f7f7;
+}
+.card .meta-tags a:hover {
+  color: #fff;
+}
+/*******************************
+        Semantic UI
+*******************************/
+/*******************************
+             Icon
+*******************************/
+@font-face {
+  font-family: 'Icons';
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot?#iefix") format('embedded-opentype'), url("../fonts/icons.woff2") format('woff'), url("../fonts/icons.woff") format('woff'), url("../fonts/icons.ttf") format('truetype'), url("../fonts/icons.svg#icons") format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+/* --------------------------------
+
+FlowType CSS
+
+-------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+}
+h2 {
+  font-size: 4.2rem;
+}
+h2.section-title {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase !important;
+  font-weight: 300;
+}
+h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.6rem;
+}
+h6.title {
+  color: #f9004f !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 3.6rem;
+  text-transform: uppercase !important;
+}
+h6.education-heading,
+.education-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+h6.education-body {
+  font-weight: 300;
+  font-size: 3.6rem;
+}
+/* Sections */
+/* Proficiencies */
+.proficiencies .content .header {
+  font-size: 3.6rem;
+  line-height: 1.7;
+  font-weight: 300 !important;
+}
+/* --------------------------------
+
+Slabtext CSS
+
+-------------------------------- */
+.slabtexted .slabtext {
+  display: -moz-inline-box;
+  display: inline-block;
+  white-space: nowrap;
+}
+.slabtextinactive .slabtext {
+  display: inline;
+  white-space: normal;
+  font-size: 1em !important;
+  letter-spacing: inherit !important;
+  word-spacing: inherit !important;
+  *letter-spacing: 0 !important;
+  *word-spacing: 0 !important;
+}
+.slabtextdone .slabtext {
+  display: block;
+}
