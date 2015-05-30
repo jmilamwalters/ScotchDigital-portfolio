@@ -173,6 +173,23 @@ p
 //  border-top: 3px solid psycho-grey
 
 /*******************************
+             Fixes
+*******************************/
+// Clear borders
+.ui.cards > .card > .extra, .ui.card > .extra
+  border none
+  border-top none
+// Clear native Semantic-UI stlyes
+.ui.cards > .card > .extra,
+.card .stack-tags .labels
+  margin 0 !important
+  padding 0 !important
+// Clear label corners
+.card .labels .ui.label
+  -webkit-border-radius 0
+  border-radius 0
+
+/*******************************
           Semantic UI
 *******************************/
 .image
@@ -193,6 +210,9 @@ p
 
 .headstone
   center()
+
+.epigraph-apocrypha
+  display none
 
 .epigraph-verso
   col(8/16, offset: 1/16)
@@ -332,11 +352,19 @@ section.proficiencies
             Mobile
 *******************************/
 @media screen and (max-width: 800px)
-  .epigraph-verso,
-  .epigraph-recto,
   #epigraph-name,
   #epigraph-title
     col(1/1, cycle: 1)
+
+  .epigraph-verso,
+  .epigraph-recto
+    stack()
+
+  .epigraph-recto
+    display none
+  .epigraph-apocrypha
+    display block
+
   #profile-photo
     center()
     max-width 80%
@@ -344,6 +372,6 @@ section.proficiencies
 /*******************************
             Desktop
 *******************************/
-@media screen and (min-width: 1400px)
+/*@media screen and (min-width: 1400px)
   .ui.modal
-    width 55%
+    width 50%*/

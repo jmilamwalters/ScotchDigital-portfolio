@@ -37,20 +37,6 @@ Scotch.IO Labels CSS
 /*******************************
              Fixes
 *******************************/
-.ui.cards > .card > .extra,
-.ui.card > .extra {
-  border: none;
-  border-top: none;
-}
-.ui.cards > .card > .extra,
-.card .stack-tags .labels {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.card .labels .ui.label {
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
 /*******************************
         Stack Labels
 *******************************/

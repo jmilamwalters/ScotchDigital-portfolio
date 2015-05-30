@@ -20,11 +20,12 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:300,400,700,900,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Le Modernizr -->
-    <script src="./assets/js/modernizr.js"></script>
+    <script src="assets/js/modernizr.js"></script>
 
     <!-- Le jQuery + Semantic UI -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.0/semantic.js"></script>
+
 
 </head>
 <body>
@@ -61,8 +62,11 @@
       <header class="masthead">
         <div class="page-container">
           <div class="row">
-            <div class="headstone">
-              <div class="epigraph-verso vertical">
+            <div class="headstone vertical">
+              <div class="epigraph-apocrypha"><!-- Hide unless mobile -->
+                <img src="assets/img/button-your-collar-opt.jpg" class="ui fluid circular image" id="profile-photo">
+              </div>
+              <div class="epigraph-verso">
                   <h1 class="slabtextdone" id="epigraph-name">
                     <span class="slabtext">Jonathan Milam</span>
                     <span class="slabtext">Walters</span>
@@ -924,15 +928,20 @@
       </div>
 
       <!-- MODAL: Contact -->
-      <div class="ui inverted basic modal" id="contact-dimmer">
-        <i class="close icon"></i>
-        <div class="header">
-          <h2 class="section-title">
-            Contact
-          </h2>
-        </div>
+      <div class="ui basic modal" id="contact-dimmer">
         <div class="content">
+          <div class="center">
 
+            <i class="close icon"></i>
+            <div class="header">
+              <h2 class="section-title">
+                Contact
+              </h2>
+            </div>
+            <div class="contact-content">
+              <p>This is a paragraph</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -947,29 +956,21 @@
     ;
     $('#stjoelofts-modal')
       .modal('attach events', '.stjoelofts-button.button', 'show')
-      .modal('refresh')
     ;
     $('#noladna-modal')
       .modal('attach events', '.noladna-button.button', 'show')
-      .modal('refresh')
     ;
     $('#thirtynorth-modal')
       .modal('attach events', '.thirtynorth-button.button', 'show')
     ;
     $('#feedmoreforless-modal')
       .modal('attach events', '.feedmoreforless-button.button', 'show')
-      .modal('refresh')
     ;
     $('#escapemyroom-modal')
       .modal('attach events', '.escapemyroom-button.button', 'show')
     ;
-/*    $('#contact-dimmer')
-      .modal('attach events', 'a#contact-link', 'show')
-    ;
-*/
     $('#contact-link').click(
-                       $('#contact-dimmer').modal('attach events', 'a#contact-link', 'show') &&
-                       $('.ui.dimmer').addClass('contact-bg')
+                       $('#contact-dimmer').modal('attach events', 'a#contact-link', 'show')
                        );
   </script>
   <script>

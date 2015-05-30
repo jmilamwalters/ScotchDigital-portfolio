@@ -236,6 +236,23 @@ p {
   color: #332f3e;
 }
 /*******************************
+             Fixes
+*******************************/
+.ui.cards > .card > .extra,
+.ui.card > .extra {
+  border: none;
+  border-top: none;
+}
+.ui.cards > .card > .extra,
+.card .stack-tags .labels {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.card .labels .ui.label {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/*******************************
           Semantic UI
 *******************************/
 .image {
@@ -271,6 +288,9 @@ p {
 }
 .headstone:after {
   clear: both;
+}
+.epigraph-apocrypha {
+  display: none;
 }
 .epigraph-verso {
   *zoom: 1;
@@ -539,8 +559,6 @@ section.proficiencies {
             Mobile
 *******************************/
 @media screen and (max-width: 800px) {
-  .epigraph-verso,
-  .epigraph-recto,
   #epigraph-name,
   #epigraph-title {
     *zoom: 1;
@@ -551,35 +569,48 @@ section.proficiencies {
     margin-left: 0%;
     margin-right: 3%;
   }
-  .epigraph-verso:before,
-  .epigraph-recto:before,
   #epigraph-name:before,
   #epigraph-title:before,
-  .epigraph-verso:after,
-  .epigraph-recto:after,
   #epigraph-name:after,
   #epigraph-title:after {
     content: '';
     display: table;
   }
-  .epigraph-verso:after,
-  .epigraph-recto:after,
   #epigraph-name:after,
   #epigraph-title:after {
     clear: both;
   }
-  .epigraph-verso:nth-child(1n),
-  .epigraph-recto:nth-child(1n),
   #epigraph-name:nth-child(1n),
   #epigraph-title:nth-child(1n) {
     margin-right: 0%;
     float: right;
   }
-  .epigraph-verso:nth-child(1n+1),
-  .epigraph-recto:nth-child(1n+1),
   #epigraph-name:nth-child(1n+1),
   #epigraph-title:nth-child(1n+1) {
     clear: both;
+  }
+  .epigraph-verso,
+  .epigraph-recto {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .epigraph-verso:first-child,
+  .epigraph-recto:first-child {
+    margin-left: auto;
+  }
+  .epigraph-verso:last-child,
+  .epigraph-recto:last-child {
+    margin-right: auto;
+  }
+  .epigraph-recto {
+    display: none;
+  }
+  .epigraph-apocrypha {
+    display: block;
   }
   #profile-photo {
     *zoom: 1;
@@ -605,8 +636,6 @@ section.proficiencies {
 /*******************************
             Desktop
 *******************************/
-@media screen and (min-width: 1400px) {
-  .ui.modal {
-    width: 55%;
-  }
-}
+/*@media screen and (min-width: 1400px)
+  .ui.modal
+    width 50%*/
