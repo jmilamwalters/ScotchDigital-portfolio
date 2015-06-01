@@ -173,6 +173,12 @@ p
 //  border-top: 3px solid psycho-grey
 
 /*******************************
+          Mobile Menu
+*******************************/
+#mobile-menu
+  display none
+
+/*******************************
              Fixes
 *******************************/
 // Clear borders
@@ -327,6 +333,15 @@ section.proficiencies
   color psycho-grey
   border-bottom 3px dotted psycho-grey
 
+.contact-address
+  col(1/2)
+
+.contact-info
+  col(1/2)
+
+.contact-info li
+  text-align right
+
 /*--------------
     Modal
 ---------------*/
@@ -352,6 +367,14 @@ section.proficiencies
             Mobile
 *******************************/
 @media screen and (max-width: 800px)
+
+  .contact-address,
+  .contact-info
+    stack()
+
+  .contact-info li
+    text-align left
+
   #epigraph-name,
   #epigraph-title
     col(1/1, cycle: 1)
@@ -365,9 +388,21 @@ section.proficiencies
   .epigraph-apocrypha
     display block
 
+  main.main-homepage
+    padding 50px 0 0
+
   #profile-photo
     center()
     max-width 80%
+
+  #top-menu
+    display none
+  #mobile-menu
+    display block
+    center()
+  #mobile-menu .mobile-menu-item
+    text-align center
+
 
 /*******************************
             Desktop

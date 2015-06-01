@@ -73,4 +73,13 @@ jQuery(document).ready(function($){
     on: 'hover'
   });
 
+  // Menu Accordion: Change Trigger
+  $('.psychopomp-menu .accordion')
+    .accordion({
+      selector: {
+        trigger: '.psychopomp-menu-trigger'
+      }
+    })
+  ;
+
 });

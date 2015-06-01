@@ -236,6 +236,12 @@ p {
   color: #332f3e;
 }
 /*******************************
+          Mobile Menu
+*******************************/
+#mobile-menu {
+  display: none;
+}
+/*******************************
              Fixes
 *******************************/
 .ui.cards > .card > .extra,
@@ -518,6 +524,49 @@ section.proficiencies {
   color: #e6e6e6;
   border-bottom: 3px dotted #e6e6e6;
 }
+.contact-address {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.contact-address:before,
+.contact-address:after {
+  content: '';
+  display: table;
+}
+.contact-address:after {
+  clear: both;
+}
+.contact-address:last-child {
+  margin-right: 0%;
+}
+.contact-info {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.contact-info:before,
+.contact-info:after {
+  content: '';
+  display: table;
+}
+.contact-info:after {
+  clear: both;
+}
+.contact-info:last-child {
+  margin-right: 0%;
+}
+.contact-info li {
+  text-align: right;
+}
 /*--------------
     Modal
 ---------------*/
@@ -559,6 +608,26 @@ section.proficiencies {
             Mobile
 *******************************/
 @media screen and (max-width: 800px) {
+  .contact-address,
+  .contact-info {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-address:first-child,
+  .contact-info:first-child {
+    margin-left: auto;
+  }
+  .contact-address:last-child,
+  .contact-info:last-child {
+    margin-right: auto;
+  }
+  .contact-info li {
+    text-align: left;
+  }
   #epigraph-name,
   #epigraph-title {
     *zoom: 1;
@@ -612,6 +681,9 @@ section.proficiencies {
   .epigraph-apocrypha {
     display: block;
   }
+  main.main-homepage {
+    padding: 50px 0 0;
+  }
   #profile-photo {
     *zoom: 1;
     width: auto;
@@ -631,6 +703,32 @@ section.proficiencies {
   }
   #profile-photo:after {
     clear: both;
+  }
+  #top-menu {
+    display: none;
+  }
+  #mobile-menu {
+    display: block;
+    *zoom: 1;
+    width: auto;
+    max-width: 1440px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #mobile-menu:before,
+  #mobile-menu:after {
+    content: '';
+    display: table;
+  }
+  #mobile-menu:after {
+    clear: both;
+  }
+  #mobile-menu .mobile-menu-item {
+    text-align: center;
   }
 }
 /*******************************
