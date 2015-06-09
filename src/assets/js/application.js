@@ -74,10 +74,10 @@ jQuery(document).ready(function($){
   });
 
   // Menu Accordion: Change Trigger
-  $('.psychopomp-menu .accordion')
+  $('#mobile-menu .accordion')
     .accordion({
       selector: {
-        trigger: '.psychopomp-menu-trigger'
+        trigger: '.mobile-menu-trigger'
       }
     })
   ;

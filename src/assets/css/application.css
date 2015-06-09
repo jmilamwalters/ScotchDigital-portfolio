@@ -709,6 +709,13 @@ section.proficiencies {
   }
   #mobile-menu {
     display: block;
+  }
+  .mobile-menu-trigger {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+  #mobile-menu .mobile-menu-item a {
     *zoom: 1;
     width: auto;
     max-width: 1440px;
@@ -719,15 +726,20 @@ section.proficiencies {
     padding-left: 0;
     padding-right: 0;
   }
-  #mobile-menu:before,
-  #mobile-menu:after {
+  #mobile-menu .mobile-menu-item a:before,
+  #mobile-menu .mobile-menu-item a:after {
     content: '';
     display: table;
   }
-  #mobile-menu:after {
+  #mobile-menu .mobile-menu-item a:after {
     clear: both;
   }
-  #mobile-menu .mobile-menu-item {
+  #mobile-menu a {
+    font-size: 3.6rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
     text-align: center;
   }
 }
