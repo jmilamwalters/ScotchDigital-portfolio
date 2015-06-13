@@ -157,6 +157,203 @@ h6.education-body {
   line-height: 1.7;
   font-weight: 300 !important;
 }
+/*******************************
+            Mobile
+*******************************/
+@media screen and (max-width: 800px) {
+  .contact-address,
+  .contact-info {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-address:first-child,
+  .contact-info:first-child {
+    margin-left: auto;
+  }
+  .contact-address:last-child,
+  .contact-info:last-child {
+    margin-right: auto;
+  }
+  .contact-info li {
+    text-align: left;
+  }
+  #epigraph-name,
+  #epigraph-title {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  #epigraph-name:before,
+  #epigraph-title:before,
+  #epigraph-name:after,
+  #epigraph-title:after {
+    content: '';
+    display: table;
+  }
+  #epigraph-name:after,
+  #epigraph-title:after {
+    clear: both;
+  }
+  #epigraph-name:nth-child(1n),
+  #epigraph-title:nth-child(1n) {
+    margin-right: 0%;
+    float: right;
+  }
+  #epigraph-name:nth-child(1n+1),
+  #epigraph-title:nth-child(1n+1) {
+    clear: both;
+  }
+  .epigraph-verso,
+  .epigraph-recto {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .epigraph-verso:first-child,
+  .epigraph-recto:first-child {
+    margin-left: auto;
+  }
+  .epigraph-verso:last-child,
+  .epigraph-recto:last-child {
+    margin-right: auto;
+  }
+  .epigraph-recto {
+    display: none;
+  }
+  .epigraph-apocrypha {
+    display: block;
+  }
+  main.main-homepage {
+    padding: 50px 0 0;
+  }
+  #profile-photo {
+    *zoom: 1;
+    width: auto;
+    max-width: 1440px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 75%;
+  }
+  #profile-photo:before,
+  #profile-photo:after {
+    content: '';
+    display: table;
+  }
+  #profile-photo:after {
+    clear: both;
+  }
+  #top-menu {
+    display: none;
+  }
+  #mobile-menu {
+    display: block;
+  }
+  #mobile-menu .ui.list > .item:last-child {
+    padding-bottom: 4rem;
+  }
+  .mobile-menu-trigger {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+  #mobile-menu .mobile-menu-item a {
+    *zoom: 1;
+    width: auto;
+    max-width: 1440px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #mobile-menu .mobile-menu-item a:before,
+  #mobile-menu .mobile-menu-item a:after {
+    content: '';
+    display: table;
+  }
+  #mobile-menu .mobile-menu-item a:after {
+    clear: both;
+  }
+  #mobile-menu a {
+    color: #332f3e;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #mobile-menu .mobile-menu-item a:hover {
+    color: #80c8b5 !important;
+  }
+  #mobile-menu .page-container {
+    padding-bottom: 0;
+  }
+  h2.section-title {
+    font-size: 3rem;
+  }
+  #experience .row {
+    margin-bottom: 0;
+  }
+  .experience-tasks h6.education-body {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  h6.education-heading,
+  .education-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+  }
+  h6.education-body {
+    font-weight: 300;
+    font-size: 2.6rem;
+  }
+  .proficiencies h6.title {
+    font-size: 2.4rem !important;
+  }
+  .ui .list .item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+  .ui .list .item .header {
+    font-size: 2rem;
+  }
+  #contact h6 {
+    font-size: 2rem;
+    line-height: 3.6rem;
+  }
+  .actions .ui.inverted.buttons a {
+    font-size: 1.6rem;
+  }
+  .stack-heading {
+    font-size: 2.6rem;
+  }
+  .ui.massive.red.label {
+    margin-bottom: 1rem;
+  }
+}
 /* --------------------------------
 
 Slabtext CSS

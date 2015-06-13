@@ -202,6 +202,115 @@ h6.education-body
   line-height 1.7
   font-weight 300 !important
 
+
+/*******************************
+            Mobile
+*******************************/
+@media screen and (max-width: 800px)
+  .contact-address,
+  .contact-info
+    stack()
+  .contact-info li
+    text-align left
+
+  #epigraph-name,
+  #epigraph-title
+    col(1/1, cycle: 1)
+  .epigraph-verso,
+  .epigraph-recto
+    stack()
+  .epigraph-recto
+    display none
+  .epigraph-apocrypha
+    display block
+
+  main.main-homepage
+    padding 50px 0 0
+
+  #profile-photo
+    center()
+    max-width 75%
+
+  #top-menu
+    display none
+  #mobile-menu
+    display block
+
+  #mobile-menu .ui.list > .item:last-child
+    padding-bottom 4rem
+
+  .mobile-menu-trigger
+    position absolute
+    top 3rem
+    right 3rem
+  #mobile-menu .mobile-menu-item a
+    center()
+  #mobile-menu a
+    color psycho-black
+    font-size 3rem
+    font-weight bold
+    padding-top 2rem
+    padding-right 2rem
+    padding-bottom 2rem
+    padding-left 2rem
+    text-align center
+    text-transform uppercase
+  #mobile-menu .mobile-menu-item a:hover
+    color psycho-teal !important
+
+  #mobile-menu .page-container
+    padding-bottom 0
+
+  /* Section Globals */
+  h2.section-title
+    font-size 3rem
+
+  /* Experience & Education */
+  #experience .row
+    margin-bottom 0
+
+  .experience-tasks h6.education-body
+    font-size 1.8rem
+    margin-top 2rem
+    margin-bottom 3rem
+
+  h6.education-heading,
+  .education-heading
+    font-family psycho-display
+    font-weight 900
+    font-size 2.6rem
+    text-transform uppercase
+
+  h6.education-body,
+  h6.education-body
+    font-weight 300
+    font-size 2.6rem
+
+  /* Proficiencies */
+  .proficiencies h6.title
+    font-size 2.4rem !important
+
+  .ui .list .item
+    padding-left 1rem
+    padding-right 1rem
+    font-size 1rem
+
+  .ui .list .item .header
+    font-size 2rem
+
+  /* Contact */
+  #contact h6
+    font-size 2rem
+    line-height 3.6rem
+
+  /* Modals */
+  .actions .ui.inverted.buttons a
+    font-size 1.6rem
+  .stack-heading
+    font-size 2.6rem
+  .ui.massive.red.label
+    margin-bottom 1rem
+
 /* --------------------------------
 
 Slabtext CSS
